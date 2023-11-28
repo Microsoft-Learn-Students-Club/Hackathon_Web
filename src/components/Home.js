@@ -1,13 +1,16 @@
 import React from "react";
+import logo from "../assets/Logo.png";
+import './style/home.css';
 // import Typewriter from 'react-typewriter-effect';      // Uncomment this line to use the typewriter effect
 
 const Home = () => {
   return (
-    <div className="bg-black p-8 text-center h-screen flex flex-col justify-center items-center">
+    <div className="main">
       {/* Can add club logo here */}
-      <h1 class="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-l from-rose-950 via-purple-400 to-purple-800">
-        Welcome to MLSC Codefest: <br />Coherence 1.0
+      <h1 className="Heading">
+        Welcome to MLSC Codefest
       </h1>
+      <img className="logo-img" src={logo} />
       <p className="text-2xl text-white mt-10">
         Join us for an exciting hackathon experience!
       </p>
