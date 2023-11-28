@@ -30,7 +30,7 @@ const FAQs = () => {
       <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
       {faqsData.map((faq, index) => (
-        <div key={index} className="text-left mb-4">
+        <div key={index} className="rounded p-4 mb-4 border border-white">
           <div
             className="cursor-pointer font-bold"
             onClick={() => toggleQuestion(index)}

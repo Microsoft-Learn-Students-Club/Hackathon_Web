@@ -32,7 +32,7 @@ const Registration = () => {
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   return (
-    <div className="text-white p-8 text-center">
+    <div className="text-white p-4 md:p-8">
       <h2 className="text-3xl font-bold mb-4">Register for MLSC Codefest: Coherence 1.0</h2>
       <p className="text-lg mb-4">
         Ready to showcase your skills and participate in the hackathon? Click the button below to register!
@@ -43,11 +43,10 @@ const Registration = () => {
       >
         Register Now on Devfolio
       </button>
-      <br />
       {/* Problem Statement Button */}
       <button
         onClick={handleProblemStatementClick}
-        className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full mx-2 ${isButtonsEnabled ? '' : 'opacity-50 cursor-not-allowed'}`}
+        className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full mb-2 mx-2 ${isButtonsEnabled ? '' : 'opacity-50 cursor-not-allowed'}`}
         disabled={!isButtonsEnabled}
       >
         Problem Statements
