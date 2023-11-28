@@ -1,8 +1,9 @@
 import React from 'react';
+import './style/Contact.css';
 
 const ContactUs = () => {
   return (
-    <div className=" text-white p-8 text-center">
+    <div className="contact-parent">
       <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
 
       <div className="flex flex-wrap justify-center">

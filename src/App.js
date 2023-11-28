@@ -13,9 +13,9 @@ import Sponsors from "./components/Sponsors";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
+import ParticlesComponent from "./components/Particles";
 
 function App() {
-
   const [showAbout, setShowAbout] = useState(false);
 
   useEffect(() => {
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className="App bg-black">
+      <ParticlesComponent/>
       <Home />
       {showAbout && <About />}
 
@@ -44,6 +45,7 @@ function App() {
       <AboutUs />
       <ContactUs />
       <Footer />
+      
     </div>
   );
 }

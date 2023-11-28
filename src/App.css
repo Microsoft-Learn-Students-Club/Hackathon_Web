@@ -1,6 +1,8 @@
+
 .App {
+  z-index: 2;
   text-align: center;
-  font-family: product sans;
+  font-family: 'Product Sans', 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -13,7 +15,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.particles{
+  position: absolute;
+  z-index: 0;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

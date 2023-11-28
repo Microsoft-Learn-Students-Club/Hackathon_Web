@@ -1,8 +1,9 @@
 import React from 'react';
+import './style/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className=" text-white p-4 text-center">
+    <footer className="parent-footer">
       <p className="text-sm">
         &copy; 2023 MLSC Codefest: Coherence 1.0. All rights reserved.
       </p>

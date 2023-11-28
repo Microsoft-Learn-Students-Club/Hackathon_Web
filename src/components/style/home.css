@@ -1,4 +1,5 @@
 .main {
+    position: relative;
     align-items: center;
     height: 800px;
     width: 100%;

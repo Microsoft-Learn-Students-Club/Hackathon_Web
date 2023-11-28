@@ -5,7 +5,7 @@ import './style/home.css';
 
 const Home = () => {
   return (
-    <div className="main">
+    <div className="main" style={{ zIndex: 3 }}>
       {/* Can add club logo here */}
       <h1 className="Heading">
         Welcome to MLSC Codefest

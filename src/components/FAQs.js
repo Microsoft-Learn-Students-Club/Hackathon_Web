@@ -1,3 +1,5 @@
+import './style/FAQs.css';
+
 import React, { useState } from 'react';
 
 const FAQs = () => {
@@ -26,7 +28,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="text-white p-8 text-center">
+    <div className="parent-faq">
       <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
       {faqsData.map((faq, index) => (

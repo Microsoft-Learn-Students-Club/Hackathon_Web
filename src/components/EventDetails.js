@@ -1,8 +1,9 @@
 import React from 'react';
+import './style/EventDetails.css';
 
 const EventDetails = () => {
   return (
-    <div className="text-white p-8 text-center">
+    <div className="parent-event">
       <h2 className="text-3xl font-bold mb-4">Event Details</h2>
       <p className="text-lg mb-4">
         MLSC Codefest: Coherence 1.0 is a hackathon that focuses on bringing together coding enthusiasts,
