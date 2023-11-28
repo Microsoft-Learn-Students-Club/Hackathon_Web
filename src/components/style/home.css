@@ -1,0 +1,28 @@
+.main {
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.Heading {
+    font-weight: bolder;
+    font-size: 70px;
+    background: linear-gradient(45deg, rgb(166, 6, 184), #692fab);
+    -webkit-background-clip: text;
+    /* For Safari/Chrome */
+    color: transparent;
+    padding: 5px;
+
+}
+
+.logo-img {
+    margin: auto;
+    width: 70%;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
