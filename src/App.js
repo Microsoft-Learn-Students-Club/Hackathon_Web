@@ -10,6 +10,7 @@ import FAQs from "./components/FAQs";
 import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
+import PrizePodium from "./components/PrizePodium";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Domains />
       <Schedule />
       <GeneralGuidelines />
+      <PrizePodium />
       <Sponsors />
       <FAQs />
       <ContactUs />

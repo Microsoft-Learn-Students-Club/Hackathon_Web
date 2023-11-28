@@ -9,7 +9,7 @@ const ContactUs = () => {
         {/* Contact Information */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <h3 className="text-xl md:text-2xl font-bold mb-2">Reach Us</h3>
-          <p className="text-lg md:text-base mb-2">
+          <p className="text-lg font-semibold md:text-base mb-2">
             Vidyavardhini's College of Engineering and Technology
           </p>
           <p className="text-lg md:text-base">
@@ -21,11 +21,19 @@ const ContactUs = () => {
           <h3 className="text-xl md:text-2xl font-bold mt-4 mb-2">
             Contact Numbers
           </h3>
-          <p className="text-lg md:text-base mb-2">General Enquiries: +91 9369744734</p>
-          <p className="text-lg md:text-base">Technical Support: +91 9369744734</p>
+          <div className="mb-2">
+            <p className="text-lg md:text-base mb-1">General Enquiries:</p>
+            <p className="text-lg md:text-base">Rishabh Tripathi: +91 9369744734</p>
+            <p className="text-lg md:text-base">Sanika Patil: +91 9876543210</p>
+          </div>
+          <div>
+            <p className="text-lg md:text-base mb-1">Technical Support:</p>
+            <p className="text-lg md:text-base">Kshitij Patil: +91 9369744734</p>
+            <p className="text-lg md:text-base">Om Achrekar: +91 9876543210</p>
+          </div>
 
           <h3 className="text-xl md:text-2xl font-bold mt-4 mb-2">Email</h3>
-          <p className="text-lg md:text-base">For Enquiries: rishabh.tripathi@mlsc.com</p>
+          <p className="text-lg md:text-base">For Enquiries: mlsc@vcet.edu.in</p>
         </div>
 
         {/* Embedded Google Maps */}
