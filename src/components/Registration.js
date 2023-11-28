@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './style/Registration.css';
 
 const Registration = () => {
   const [isButtonsEnabled, setButtonsEnabled] = useState(false);
@@ -32,9 +33,9 @@ const Registration = () => {
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   return (
-    <div className="text-white p-8 text-center">
+    <div className="parent-registration">
       <h2 className="text-3xl font-bold mb-4">Register for MLSC Codefest: Coherence 1.0</h2>
-      <p className="text-lg mb-4">
+      <p className="reg-btn">
         Ready to showcase your skills and participate in the hackathon? Click the button below to register!
       </p>
       <button

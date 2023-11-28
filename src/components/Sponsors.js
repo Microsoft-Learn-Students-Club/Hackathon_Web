@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './style/Sponsors.css';
 
 const Sponsors = () => {
   const sponsorLogos = [
@@ -20,7 +21,7 @@ const Sponsors = () => {
   };
 
   return (
-    <div className="py-16">
+    <div className="parent-sponsor">
       <div className="container mx-auto relative">
         <h2 className="text-3xl font-bold text-center mb-8 text-white">Our Sponsors</h2>
         <div

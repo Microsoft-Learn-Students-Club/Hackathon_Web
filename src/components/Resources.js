@@ -1,10 +1,11 @@
 // src/components/Resources.js
 
 import React from 'react';
+import './style/Resources.css';
 
 const Resources = () => {
   return (
-    <div className="text-white p-8 text-center">
+    <div className="parent-resources">
       <h2 className="text-3xl font-bold mb-4">Hackathon Resources</h2>
       <p className="text-lg mb-4">
         Here are some tools and resources that you can use during MLSC Codefest: Coherence 1.0:

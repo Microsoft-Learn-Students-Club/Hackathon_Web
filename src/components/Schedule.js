@@ -1,8 +1,9 @@
 import React from "react";
+import './style/schedule.css';
 
 const Schedule = () => {
   return (
-    <div className="w-auto px-52">
+    <div className="parent-schedule">
       <h2 className="text-3xl font-bold mb-4 text-white">Event Schedule</h2>
       {/* Day 1 */}
       <h3 className="text-2xl mb-4 text-white font-semibold">

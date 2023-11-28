@@ -1,3 +1,4 @@
+import './style/Submission.css';
 import React, { useState, useEffect } from "react";
 
 const GeneralGuidelines = () => {
@@ -17,7 +18,7 @@ const GeneralGuidelines = () => {
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   return (
-    <div className="text-white p-8 text-center">
+    <div className="parent-submission">
       <h2 className="text-3xl font-bold mb-4">General Guidelines</h2>
       <ul className="text-left list-disc mb-10 px-24 py-8">
         <li>

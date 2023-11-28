@@ -1,3 +1,9 @@
 .parent-registration{
     position: relative;
+    z-index: 1;
+}
+
+.reg-btn{
+    position: relative;
+    z-index: 1;
 }
