@@ -10,7 +10,7 @@ const Home = () => {
       <h1 className="Heading">
         Welcome to MLSC Codefest
       </h1>
-      <img className="logo-img" src={logo} />
+      <img className="logo-img" src={logo} alt="This was the logo" />
       <p className="text-2xl text-white mt-10">
         Join us for an exciting hackathon experience!
       </p>
