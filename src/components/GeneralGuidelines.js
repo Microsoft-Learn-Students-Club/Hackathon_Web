@@ -6,7 +6,7 @@ const GeneralGuidelines = () => {
   // Function to check whether conditions for enabling the button are met
   const areConditionsMet = () => {
     // Replace with your actual date and time for enabling the button
-    const enableDate = new Date("February 18, 2024 10:00:00 GMT+0000");
+    const enableDate = new Date("February 18, 2024 10:00:00 GMT+0530");
     const currentDate = new Date();
     return currentDate >= enableDate;
   };
@@ -61,7 +61,7 @@ const GeneralGuidelines = () => {
         }`}
         disabled={isButtonDisabled}
       >
-        Submit Your Project on Devfolio
+        Submit Your Project
       </button>
       {/* Add more content as needed */}
     </div>

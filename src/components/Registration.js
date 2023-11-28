@@ -21,7 +21,7 @@ const Registration = () => {
   // Function to check whether conditions for enabling the buttons are met
   const areConditionsMet = () => {
     // Replace with your actual date and time for enabling the buttons
-    const enableDate = new Date('February 16, 2024 21:00:00 GMT+0000');
+    const enableDate = new Date('February 16, 2024 21:00:00 GMT+0530');
     const currentDate = new Date();
     return currentDate >= enableDate;
   };
@@ -41,7 +41,7 @@ const Registration = () => {
         onClick={handleRegistrationClick}
         className="bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full mb-4"
       >
-        Register Now on Devfolio
+        Register Now
       </button>
       {/* Problem Statement Button */}
       <button

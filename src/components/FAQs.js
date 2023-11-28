@@ -26,11 +26,11 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="text-white p-8 text-center">
-      <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+    <div className="text-white p-4 md:p-8 px-4 md:px-28">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
       {faqsData.map((faq, index) => (
-        <div key={index} className="rounded p-4 mb-4 border border-white">
+        <div key={index} className="rounded p-4 mb-4 border border-white text-left">
           <div
             className="cursor-pointer font-bold"
             onClick={() => toggleQuestion(index)}
@@ -44,8 +44,6 @@ const FAQs = () => {
           )}
         </div>
       ))}
-
-      {/* Add more FAQs as needed */}
     </div>
   );
 };
