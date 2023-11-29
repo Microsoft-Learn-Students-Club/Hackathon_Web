@@ -6,10 +6,12 @@ import Domains from "./components/Domains";
 import Registration from "./components/Registration";
 import Schedule from "./components/Schedule";
 import Submissions from "./components/Submission";
+import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
 import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
+import PrizePodium from "./components/PrizePodium";
 
 function App() {
 
@@ -33,11 +35,10 @@ function App() {
       <Registration />
       <Domains />
       <Schedule />
-      {/* <Resources /> */}
-      <Submissions />
+      <GeneralGuidelines />
+      <PrizePodium />
       <Sponsors />
       <FAQs />
-
       <ContactUs />
       <Footer />
     </div>

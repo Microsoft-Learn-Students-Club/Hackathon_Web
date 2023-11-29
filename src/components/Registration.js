@@ -21,7 +21,7 @@ const Registration = () => {
   // Function to check whether conditions for enabling the buttons are met
   const areConditionsMet = () => {
     // Replace with your actual date and time for enabling the buttons
-    const enableDate = new Date('February 16, 2024 21:00:00 GMT+0000');
+    const enableDate = new Date('February 16, 2024 21:00:00 GMT+0530');
     const currentDate = new Date();
     return currentDate >= enableDate;
   };
@@ -32,7 +32,7 @@ const Registration = () => {
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   return (
-    <div className="text-white p-8 text-center">
+    <div className="text-white p-4 md:p-8">
       <h2 className="text-3xl font-bold mb-4">Register for MLSC Codefest: Coherence 1.0</h2>
       <p className="text-lg mb-4">
         Ready to showcase your skills and participate in the hackathon? Click the button below to register!
@@ -41,13 +41,12 @@ const Registration = () => {
         onClick={handleRegistrationClick}
         className="bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full mb-4"
       >
-        Register Now on Devfolio
+        Register Now
       </button>
-      <br />
       {/* Problem Statement Button */}
       <button
         onClick={handleProblemStatementClick}
-        className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full mx-2 ${isButtonsEnabled ? '' : 'opacity-50 cursor-not-allowed'}`}
+        className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full mb-2 mx-2 ${isButtonsEnabled ? '' : 'opacity-50 cursor-not-allowed'}`}
         disabled={!isButtonsEnabled}
       >
         Problem Statements
