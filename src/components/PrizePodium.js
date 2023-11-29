@@ -1,31 +1,41 @@
-import React from 'react';
+// PrizePodium.js
+
+import React from "react";
+import "../components/style/PrizePodium.css";
+import "./style/sectionLine.css";
 
 const PrizePodium = () => {
+  const prizes = [
+    {
+      title: "First Prize",
+      description: "₹ 10,000 + Certificate",
+    },
+    {
+      title: "Second Prize",
+      description: "₹ 5,000 + Certificate",
+    },
+    {
+      title: "Third Prize",
+      description: "₹ 3,000 + Certificate",
+    },
+  ];
+
   return (
-    <div className="text-white p-4 md:p-8 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">Prizes up for grabs!!</h2>
-      <p className="text-lg md:text-base mb-4">
-        The top 3 teams from each track will be awarded the following cash prizes
-      </p>
+    <div className="p-4 md:p-8">
+      <h2 className="text-3xl font-bold mb-12 section_header text-white">
+        <hr /> <span>Prizes up for grabs!</span>
+        <hr />
+      </h2>
 
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        {/* 2nd Place */}
-        <div className="rounded-2xl bg-gray-400 p- md:p-10 mb-4 md:mb-0 md:mr-4 w-full md:w-auto">
-          <h3 className="text-xl md:text-2xl font-bold">2nd Place</h3>
-          <p>Cash Prize: ₹ 5,000</p>
-        </div>
-
-        {/* 1st Place */}
-        <div className="rounded-2xl bg-amber-400 p-8 md:p-12 mb-4 md:mb-0 w-full md:w-auto">
-          <h3 className="text-xl md:text-2xl font-bold">1st Place</h3>
-          <p>Cash Prize: ₹ 10,000</p>
-        </div>
-
-        {/* 3rd Place */}
-        <div className="rounded-2xl bg-orange-700 p-4 md:p-8 w-full md:w-auto">
-          <h3 className="text-xl md:text-2xl font-bold">3rd Place</h3>
-          <p>Cash Prize: ₹ 3,000</p>
-        </div>
+      <div className="prize-podium">
+        {prizes.map((prize, index) => (
+          <div key={index} className="prize-card">
+            <div className="card-content">
+              <h3 className="text-xl md:text-2xl font-semibold text-white">{prize.title}</h3>
+              <p className="text-lg md:text-xl font-bold text-white">{prize.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 import React from "react";
 import TitleSponsor from "../assets/sponsor_logo.png";
+import "./style/sectionLine.css";
+
 
 const Sponsors = () => {
   return (
     <div className="text-white p-4 md:p-8 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Sponsors</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 section_header"><hr /><span>Our Sponsors</span><hr /></h2>
 
       {/* Title Sponsor */}
       <div className="mb-4 md:mb-8">
@@ -60,7 +62,6 @@ const Sponsors = () => {
               width={100} // Set the desired width in pixels
               height={150} // Set the desired height in pixels
             />
-            <p className="text-sm">Co-Sponsor 2 Company Name</p>
           </div>
 
           {/* Miscellaneous Sponsors */}
@@ -72,7 +73,6 @@ const Sponsors = () => {
               width={100} // Set the desired width in pixels
               height={150} // Set the desired height in pixels
             />
-            <p className="text-sm">Miscellaneous Sponsor 1 Company Name</p>
           </div>
 
           <div className="text-center mb-4">
@@ -83,7 +83,15 @@ const Sponsors = () => {
               width={100} // Set the desired width in pixels
               height={150} // Set the desired height in pixels
             />
-            <p className="text-sm">Miscellaneous Sponsor 2 Company Name</p>
+          </div>
+          <div className="text-center mb-4">
+            <img
+              src={TitleSponsor}
+              alt="misc-sponsor-2"
+              className="max-w-full h-auto mb-2"
+              width={100} // Set the desired width in pixels
+              height={150} // Set the desired height in pixels
+            />
           </div>
         </div>
       </div>
