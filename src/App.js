@@ -12,6 +12,7 @@ import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
 
+
 function App() {
 
   const [showAbout, setShowAbout] = useState(false);

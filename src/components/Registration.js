@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./style/sectionLine.css";
+import registerImage from "../assets/hackathon-2.jpeg"; // Replace with the actual path to your image
 
-
-const Registration = () => {
+const Register = () => {
   const [isButtonsEnabled, setButtonsEnabled] = useState(false);
 
   const handleRegistrationClick = () => {
@@ -18,9 +17,8 @@ const Registration = () => {
   };
 
   const areConditionsMet = () => {
-    const enableDate = new Date("February 16, 2024 21:00:00 GMT+0530");
-    const currentDate = new Date();
-    return currentDate >= enableDate;
+    // Add your conditions for enabling/disabling buttons
+    return true; // Example: always enable buttons
   };
 
   useEffect(() => {
@@ -28,44 +26,57 @@ const Registration = () => {
   }, []);
 
   return (
-    <div>
-      <h2 className="text-4xl font-bold section_header text-white">
-        <hr /><span> Ready to Ignite Your Creativity?</span><hr />
-      </h2>
-      <div className="text-white p-8 md:p-16">
-        <p className="text-lg mb-8">
-          Seize the opportunity to showcase your skills and innovate at MLSC
-          Codefest: Coherence 1.0!
+    <div className="flex p-8">
+      {/* Left Side: Smaller Image */}
+      <div className="w-1/3">
+        <img className="w-full h-auto" src={registerImage} alt="Registration" />
+      </div>
+
+      {/* Right Side: Content */}
+      <div className="w-2/3 p-8">
+        <h2 className="text-3xl font-bold mb-4 text-white">Register for Codefest</h2>
+        {/* Add your registration form and other content here */}
+        <p className="text-white">
+          Explore exciting problem statements, showcase your skills, and be part of an amazing coding experience!
         </p>
-        <button
-          onClick={handleRegistrationClick}
-          className="bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full mb-6"
-        >
-          Register Now
-        </button>
-        <div className="flex justify-center space-x-4">
+        {/* Add your registration form and other content here */}
+        <div className="mt-4">
+          {/* Register Button */}
           <button
-            onClick={handleProblemStatementClick}
+            onClick={handleRegistrationClick}
             className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full ${
               isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
-            }`}
+            } mb-4`}
             disabled={!isButtonsEnabled}
           >
-            Problem Statements
+            Register Now
           </button>
-          <button
-            onClick={handleConsentFormClick}
-            className={`bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-full ${
-              isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
-            }`}
-            disabled={!isButtonsEnabled}
-          >
-            Consent Form
-          </button>
+
+          {/* Other Buttons */}
+          <div className="flex space-x-4">
+            <button
+              onClick={handleProblemStatementClick}
+              className={`bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-full ${
+                isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
+              }`}
+              disabled={!isButtonsEnabled}
+            >
+              Problem Statements
+            </button>
+            <button
+              onClick={handleConsentFormClick}
+              className={`bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full ${
+                isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
+              }`}
+              disabled={!isButtonsEnabled}
+            >
+              Consent Form
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Registration;
+export default Register;
