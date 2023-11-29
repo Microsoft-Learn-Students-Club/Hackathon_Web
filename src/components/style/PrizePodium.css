@@ -1,0 +1,36 @@
+.prize-podium {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  }
+  
+  .prize-card {
+    position: relative;
+    width: 100%; /* Use full width on smaller screens */
+    max-width: 300px; /* Limit maximum width for larger screens */
+    height: auto; /* Auto-adjust height based on content */
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .prize-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 10px;
+  }

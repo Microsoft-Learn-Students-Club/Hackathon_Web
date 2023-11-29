@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./style/sectionLine.css";
 
 const ContactUs = () => {
@@ -10,6 +12,7 @@ const ContactUs = () => {
         {/* Contact Information */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <h3 className="lg:text-2xl font-semibold text-xl mt-2 mb-2 lg:text-left md:text-center lg:px-20">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
             Vidyavardhini's College of Engineering and Technology
           </h3>
           <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
@@ -19,11 +22,9 @@ const ContactUs = () => {
           </p>
 
           <h3 className="text-xl md:text-2xl font-bold mt-4 mb-2 lg:text-left md:text-center px-20">
-            For Enquiries:{" "}
+            <FontAwesomeIcon icon={faPhone} className="mr-2" />
+            For Enquiries:
           </h3>
-          {/* <h3 className="text-xl md:text-2xl font-bold mt-4 mb-2 text-left px-20 md:text-center">
-            Contact Numbers
-          </h3> */}
           <div className="mb-2">
             <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
               Rishabh Tripathi: +91 9369744734
@@ -35,9 +36,10 @@ const ContactUs = () => {
             </p>
           </div>
           <div>
-          <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
-            Email: <a href="mailto:mlsc@vcet.edu.in">mlsc@vcet.edu.in</a>
-          </p>
+            <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="lg" />
+              Email: <a href="mailto:mlsc@vcet.edu.in">mlsc@vcet.edu.in</a>
+            </p>
           </div>
         </div>
 
