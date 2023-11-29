@@ -5,6 +5,7 @@ import About from "./components/About";
 import Domains from "./components/Domains";
 import Registration from "./components/Registration";
 import Schedule from "./components/Schedule";
+import Submissions from "./components/Submission";
 import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
 import Sponsors from "./components/Sponsors";

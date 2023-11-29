@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style/contact.css";
 
 const ContactUs = () => {
   return (
@@ -35,8 +36,6 @@ const ContactUs = () => {
           <h3 className="text-xl md:text-2xl font-bold mt-4 mb-2">Email</h3>
           <p className="text-lg md:text-base">For Enquiries: mlsc@vcet.edu.in</p>
         </div>
-
-        {/* Embedded Google Maps */}
         <div className="w-full md:w-1/2 rounded-md overflow-hidden lg:px-20">
           <iframe
             title="College Location"
@@ -50,8 +49,6 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </div>
-
-      {/* Add more content as needed */}
     </div>
   );
 };

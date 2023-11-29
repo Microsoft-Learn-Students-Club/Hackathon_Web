@@ -9,7 +9,7 @@
 .Heading {
     font-weight: bolder;
     font-size: 70px;
-    background: linear-gradient(45deg, rgb(166, 6, 184), #692fab);
+    background: linear-gradient(30deg, rgb(205, 9, 226), #8835e6);
     -webkit-background-clip: text;
     /* For Safari/Chrome */
     color: transparent;
