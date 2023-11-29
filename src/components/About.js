@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState, useEffect } from "react";
 import RotatingTagline from "./Tagline";
-import aboutImage from "../assets/hackathon.jpeg"; // Replace with the actual path to your image
+import aboutImage from "../assets/hackathon-2.jpeg"; // Replace with the actual path to your image
 
 const About = () => {
   const [isButtonsEnabled, setButtonsEnabled] = useState(false);
