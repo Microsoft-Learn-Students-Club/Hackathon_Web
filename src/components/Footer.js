@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; 2023 MLSC Codefest: Coherence 1.0. All rights reserved.
       </p>
       <p className="text-sm mt-2">
-        Designed and developed by MLSC - Dev Team.
+        Handcrafted by MLSC Members
       </p>
     </footer>
   );
