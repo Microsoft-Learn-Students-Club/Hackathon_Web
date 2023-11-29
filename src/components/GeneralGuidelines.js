@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "./style/sectionLine.css";
+
 
 const GeneralGuidelines = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(true);
@@ -18,7 +20,7 @@ const GeneralGuidelines = () => {
 
   return (
     <div className="text-white p-8 text-center">
-      <h2 className="text-3xl font-bold mb-4">General Guidelines</h2>
+      <h2 className="text-3xl font-bold mb-4 section_header"><hr /> <span>General Guidelines</span><hr /></h2>
       <ul className="text-left list-disc mb-10 px-4 md:px-24 py-4 md:py-8 leading-relaxed">
         <li className="mb-4 text-base md:text-lg">
           All participants are requested to get their identities verified

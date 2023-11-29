@@ -1,9 +1,11 @@
 import React from 'react';
+import "./style/sectionLine.css";
+
 
 const PrizePodium = () => {
   return (
     <div className="text-white p-4 md:p-8 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">Prizes up for grabs!!</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 section_header"><hr /><span>Prizes up for grabs!!</span><hr /></h2>
       <p className="text-lg md:text-base mb-4">
         The top 3 teams from each track will be awarded the following cash prizes
       </p>

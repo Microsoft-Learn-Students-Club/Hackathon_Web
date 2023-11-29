@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
 import Domains from "./components/Domains";
-import Registration from "./components/Registration";
+// import Registration from "./components/Registration";
 import Schedule from "./components/Schedule";
 import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
@@ -31,7 +31,7 @@ function App() {
       <Home />
       {showAbout && <About />}
 
-      <Registration />
+      {/* <Registration /> */}
       <Domains />
       <Schedule />
       <GeneralGuidelines />

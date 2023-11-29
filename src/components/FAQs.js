@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import "./style/sectionLine.css";
 
 const FAQs = () => {
   const [expandedQuestions, setExpandedQuestions] = useState([]);
@@ -21,43 +22,81 @@ const FAQs = () => {
   };
 
   const faqsData = [
-    { question: 'How do I register for the hackathon?', answer: 'You can register by visiting our registration page and following the instructions.' },
-    { question: 'What is the allowed Team size?', answer: '1-4 Members in a single team' },
-    { question: 'What is the registration cost?', answer: '₹250 per team member.' },
-    { question: 'Are travel expenses included too?', answer: 'No, the participants are responsible for covering their travel expenses.' },
-    { question: 'Is it an Online or an Offline Hackathon?', answer: 'Coherence 1.0 is being hosted Offline only.' },
-    { question: 'What are the eligibility criteria?', answer: 'The hackathon is open to all participants with an active brain.' },
-    { question: 'Can I participate as an individual or do I need a team?', answer: 'Both individual and team participation are allowed. You can choose your preferred option during registration.' },
-    { question: 'Can a member be a part of two teams?', answer: 'No, every members should be a part of a single team.' },
+    {
+      question: "How do I register for the hackathon?",
+      answer:
+        "You can register by visiting our registration page and following the instructions.",
+    },
+    {
+      question: "What is the allowed Team size?",
+      answer: "1-4 Members in a single team",
+    },
+    {
+      question: "What is the registration cost?",
+      answer: "₹250 per team member.",
+    },
+    {
+      question: "Are travel expenses included too?",
+      answer:
+        "No, the participants are responsible for covering their travel expenses.",
+    },
+    {
+      question: "Is it an Online or an Offline Hackathon?",
+      answer: "Coherence 1.0 is being hosted Offline only.",
+    },
+    {
+      question: "What are the eligibility criteria?",
+      answer: "The hackathon is open to all participants with an active brain.",
+    },
+    {
+      question: "Can I participate as an individual or do I need a team?",
+      answer:
+        "Both individual and team participation are allowed. You can choose your preferred option during registration.",
+    },
+    {
+      question: "Can a member be a part of two teams?",
+      answer: "No, every members should be a part of a single team.",
+    },
     // Add more FAQs as needed
   ];
 
   return (
-    <div className="text-white p-4 md:p-8 px-4 md:px-28">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+    <div className="px-8">
+      <h2 className="text-2xl md:text-3xl text-white font-bold mb-4 section_header">
+        <hr />
+        <span>Frequently Asked Questions</span>
+        <hr />
+      </h2>
 
-      {faqsData.map((faq, index) => (
-        <div key={index} className="rounded p-4 mb-4 border border-white text-left relative">
-          <div className="flex justify-between items-center">
-            <div
-              className="cursor-pointer font-bold text-xl md:text-2xl mb-2"
-              onClick={() => toggleQuestion(index)}
-            >
-              {faq.question}
+      <div className="text-white p-4 md:p-8 px-4 md:px-28">
+        {faqsData.map((faq, index) => (
+          <div
+            key={index}
+            className="rounded p-4 mb-4 border border-white text-left relative"
+          >
+            <div className="flex justify-between items-center">
+              <div
+                className="cursor-pointer font-bold text-xl md:text-2xl mb-2"
+                onClick={() => toggleQuestion(index)}
+              >
+                {faq.question}
+              </div>
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className={`ml-2 transition-transform transform ${
+                  expandedQuestions.includes(index) ? "rotate-180" : ""
+                }`}
+                onClick={() => toggleQuestion(index)}
+              />
             </div>
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              className={`ml-2 transition-transform transform ${expandedQuestions.includes(index) ? 'rotate-180' : ''}`}
-              onClick={() => toggleQuestion(index)}
-            />
+            {expandedQuestions.includes(index) && (
+              <div className="mt-2">
+                <p>{faq.answer}</p>
+              </div>
+            )}
           </div>
-          {expandedQuestions.includes(index) && (
-            <div className="mt-2">
-              <p>{faq.answer}</p>
-            </div>
-          )}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
