@@ -1,5 +1,5 @@
 import React from "react";
-import TitleSponsor from "../assets/logo.png";
+import TitleSponsor from "../assets/sponsor_logo.png";
 
 const Sponsors = () => {
   return (
