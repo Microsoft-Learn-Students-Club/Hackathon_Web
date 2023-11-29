@@ -66,10 +66,10 @@ const Home = () => {
       </div>
       <div className="text-lg md:text-2xl text-white mt-4 md:mt-10">
         <p>
-          <span className="text-6xl">{timeRemaining.days}</span> Days&nbsp;
-          <span className="text-6xl">{timeRemaining.hours}</span> Hours&nbsp;
-          <span className="text-6xl">{timeRemaining.minutes}</span> Minutes and&nbsp;
-          <span className="text-6xl">{timeRemaining.seconds}</span> Seconds left for<br />
+          <span className="text-6xl">{timeRemaining.days}</span> Days &nbsp;
+          <span className="text-6xl">{timeRemaining.hours}</span> Hours &nbsp;
+          <span className="text-6xl">{timeRemaining.minutes}</span>Minutes and&nbsp;
+          <span className="text-6xl">{timeRemaining.seconds}</span> Seconds left <br />
           The Final Countdown to Codefest Thrills! 🚀
         </p>
       </div>
