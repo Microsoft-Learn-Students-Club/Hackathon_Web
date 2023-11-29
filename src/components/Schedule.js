@@ -9,167 +9,175 @@ const Schedule = () => {
         <span>Event Schedule</span>
         <hr />
       </h2>
-      <div className="w-full md:w-auto px-2 md:px-44">
-        {/* Day 1 */}
+      {/* component */}
+      <div className="">
         <h3 className="text-2xl mb-4 text-white font-semibold">
           Day 1 - 17th February 2024
         </h3>
-        <ol className="border-l border-neutral-300 dark:border-neutral-500">
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                9:00 AM - 9:30 AM
-              </p>
-            </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">
+        <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+          {/* left */}
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white ">
+              <h3 className="font-semibold text-lg mb-1">9:00 AM - 9:30 AM</h3>
+              <p className="leading-tight text-justify">
                 Registration and Welcome
-              </h4>
-            </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                10:00 AM
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white text-left">
-                Hackathon Kick-off and Coding Period starts
-              </h4>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                12:00 PM - 01:00 PM
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">10:00 AM</h3>
+              <p className="leading-tight text-justify">
+              Hackathon Kick-off and Coding Period starts
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">Lunch Break</h4>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                05:00 PM - 05:30 PM
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">12:00 PM - 01:00 PM</h3>
+              <p className="leading-tight text-justify">
+              Lunch Break
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">High Tea</h4>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                07:00 PM - 09:00 PM
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">05:00 PM - 05:30 PM</h3>
+              <p className="leading-tight text-justify">
+                High Tea
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">
-                Evaluation Round - I
-              </h4>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                09:00 PM - 10:00 PM
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">07:00 PM - 09:00 PM</h3>
+              <p className="leading-tight text-justify">
+              Evaluation Round - I
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">Dinner Break</h4>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-        </ol>
-        {/* Day 2 */}
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <div className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">09:00 PM - 10:00 PM</h3>
+              <p className="leading-tight text-justify">
+              Dinner Break
+              </p>
+            </div>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
+            </div>
+          </div>
+        </div>
+
         <h3 className="text-2xl mb-4 text-white font-semibold">
           Day 2 - 18th February 2024
         </h3>
-        <ol className="border-l border-neutral-300 dark:border-neutral-500">
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                01:00 AM - 01:30 AM
+        <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+          {/* right */}
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
+            </div>
+            <div className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">01:00 AM - 01:30 AM</h3>
+              <p className="leading-tight text-justify">
+              Midnight Snacks
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">
-                Midnight Snacks
-              </h4>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                07:30 AM - 08:00 AM
+            <div className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">07:30 AM - 08:00 AM</h3>
+              <p className="leading-tight text-justify">
+              Morning Tea and Snacks
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">
-                Morning Tea and Snacks
-              </h4>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                08:00 AM - 10:00 AM
+            <div className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">08:00 AM - 10:00 AM</h3>
+              <p className="leading-tight text-justify">
+              Evaluation Round - II
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white">
-                Evaluation Round - II
-              </h4>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                10:00 AM - 10:30 AM
+            <div className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">10:00 AM - 10:30 AM</h3>
+              <p className="leading-tight text-justify">
+              Coding Period ends and Final Submission Starts
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white text-left">
-                Coding Period ends and Final Submission Starts
-              </h4>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-white shadow" />
             </div>
-          </li>
-          <li>
-            <div className="flex-start flex pt-3">
-              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-200 dark:bg-neutral-500" />
-
-              <p className="text-sm text-neutral-500 dark:text-white">
-                12:00 PM - 02:00 PM
+            <div className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border border-white">
+              <h3 className="font-semibold text-lg mb-1">12:00 PM - 02:00 PM</h3>
+              <p className="leading-tight text-justify">
+              Result Announcement and Felicitation Ceremony
               </p>
             </div>
-            <div className="mb-6 ml-4 mt-2 flex-start flex pt-3">
-              <h4 className="text-xl font-semibold text-white text-left">
-                Result Announcement and Felicitation Ceremony
-              </h4>
-            </div>
-          </li>
-        </ol>
+          </div>
+        </div>
       </div>
     </div>
   );
