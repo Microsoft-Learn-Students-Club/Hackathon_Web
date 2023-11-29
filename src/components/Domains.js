@@ -1,7 +1,7 @@
 import React from 'react';
-import WebDevImage from '../assets/sponsor1.jpeg'; // Replace with your actual image URLs
-import AppDevImage from '../assets/sponsor2.jpeg';
-import AIMLImage from '../assets/sponsor3.jpeg';
+import WebDevImage from '../assets/web_dev.png'; // Replace with your actual image URLs
+import AppDevImage from '../assets/app_dev.png';
+import AIMLImage from '../assets/web_dev.png';
 
 const Domains = () => {
   const domains = [

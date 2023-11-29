@@ -22,8 +22,13 @@ const FAQs = () => {
 
   const faqsData = [
     { question: 'How do I register for the hackathon?', answer: 'You can register by visiting our registration page and following the instructions.' },
-    { question: 'What are the eligibility criteria?', answer: 'The hackathon is open to all participants with brain.' },
+    { question: 'What is the allowed Team size?', answer: '1-4 Members in a single team' },
+    { question: 'What is the registration cost?', answer: '₹250 per team member.' },
+    { question: 'Are travel expenses included too?', answer: 'No, the participants are responsible for covering their travel expenses.' },
+    { question: 'Is it an Online or an Offline Hackathon?', answer: 'Coherence 1.0 is being hosted Offline only.' },
+    { question: 'What are the eligibility criteria?', answer: 'The hackathon is open to all participants with an active brain.' },
     { question: 'Can I participate as an individual or do I need a team?', answer: 'Both individual and team participation are allowed. You can choose your preferred option during registration.' },
+    { question: 'Can a member be a part of two teams?', answer: 'No, every members should be a part of a single team.' },
     // Add more FAQs as needed
   ];
 
