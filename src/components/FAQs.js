@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const FAQs = () => {
   const [expandedQuestions, setExpandedQuestions] = useState([]);
@@ -26,16 +28,23 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="text-white p-8 text-center">
-      <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+    <div className="text-white p-4 md:p-8 px-4 md:px-28">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
 
       {faqsData.map((faq, index) => (
-        <div key={index} className="text-left mb-4">
-          <div
-            className="cursor-pointer font-bold"
-            onClick={() => toggleQuestion(index)}
-          >
-            {faq.question}
+        <div key={index} className="rounded p-4 mb-4 border border-white text-left relative">
+          <div className="flex justify-between items-center">
+            <div
+              className="cursor-pointer font-bold text-xl md:text-2xl mb-2"
+              onClick={() => toggleQuestion(index)}
+            >
+              {faq.question}
+            </div>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className={`ml-2 transition-transform transform ${expandedQuestions.includes(index) ? 'rotate-180' : ''}`}
+              onClick={() => toggleQuestion(index)}
+            />
           </div>
           {expandedQuestions.includes(index) && (
             <div className="mt-2">
@@ -44,8 +53,6 @@ const FAQs = () => {
           )}
         </div>
       ))}
-
-      {/* Add more FAQs as needed */}
     </div>
   );
 };

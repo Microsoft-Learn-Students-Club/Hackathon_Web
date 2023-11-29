@@ -1,61 +1,90 @@
-import React, { useRef } from 'react';
+import React from "react";
+import TitleSponsor from "../assets/logo.png";
 
 const Sponsors = () => {
-  const sponsorLogos = [
-    { name: 'Sponsor 1', logo: '../assets/sponsor1.jpeg' },
-    { name: 'Sponsor 2', logo: '../assets/sponsor2.jpeg' },
-    { name: 'Sponsor 3', logo: '../assets/sponsor3.jpeg' },
-    // Add more sponsors as needed
-  ];
-
-  const containerRef = useRef(null);
-
-  const scroll = (direction) => {
-    const container = containerRef.current;
-    const scrollAmount = direction === 'next' ? container.clientWidth : -container.clientWidth;
-    container.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth',
-    });
-  };
-
   return (
-    <div className="py-16">
-      <div className="container mx-auto relative">
-        <h2 className="text-3xl font-bold text-center mb-8 text-white">Our Sponsors</h2>
-        <div
-          ref={containerRef}
-          className="flex space-x-8 overflow-hidden relative"
-          style={{ scrollSnapType: 'x mandatory' }}
-        >
-          {sponsorLogos.map((sponsor, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-32 h-32 bg-white p-4 rounded-md shadow-md"
-              style={{ scrollSnapAlign: 'start' }}
-            >
-              {/* Display sponsor logo or name */}
-              <img
-                src={sponsor.logo}
-                alt={sponsor.name}
-                className="w-full h-full object-contain"
-              />
-            </div>
-          ))}
+    <div className="text-white p-4 md:p-8 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Sponsors</h2>
+
+      {/* Title Sponsor */}
+      <div className="mb-4 md:mb-8">
+        <h3 className="text-lg md:text-xl font-semibold mb-2">Title Sponsor</h3>
+        {/* Add your title sponsor details or logo here */}
+        <div className="flex flex-col items-center">
+          <img
+            src={TitleSponsor}
+            alt="sponsor-1"
+            className="max-w-full h-auto mb-2"
+            width={100} // Set the desired width in pixels
+            height={150} // Set the desired height in pixels
+          />
+          <p className="text-sm">ABCD</p>
         </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 flex space-x-4">
-          <button
-            className="text-white bg-purple-600 p-2 rounded-full hover:bg-purple-700"
-            onClick={() => scroll('prev')}
-          >
-            &lt;
-          </button>
-          <button
-            className="text-white bg-purple-600 p-2 rounded-full hover:bg-purple-700"
-            onClick={() => scroll('next')}
-          >
-            &gt;
-          </button>
+      </div>
+
+      {/* Co-Sponsors */}
+      <div className="mb-4 md:mb-8">
+        <h3 className="text-lg md:text-xl font-semibold mb-2">Co-Sponsors</h3>
+        {/* Add your co-sponsors details or logos here */}
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
+          <img
+            src={TitleSponsor}
+            alt="sponsor-1"
+            className="max-w-full h-auto mb-2"
+            width={100} // Set the desired width in pixels
+            height={150} // Set the desired height in pixels
+          />
+          <img
+            src={TitleSponsor}
+            alt="sponsor-1"
+            className="max-w-full h-auto mb-2"
+            width={100} // Set the desired width in pixels
+            height={150} // Set the desired height in pixels
+          />
+        </div>
+      </div>
+
+      {/* Miscellaneous Sponsors */}
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold mb-2">
+          Miscellaneous Sponsors
+        </h3>
+        {/* Add your miscellaneous sponsors details or logos here */}
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
+          {/* Add more miscellaneous sponsors as needed */}
+          <div className="items-center text-center mb-4">
+            <img
+              src={TitleSponsor}
+              alt="co-sponsor-2"
+              className="max-w-full h-auto mb-2"
+              width={100} // Set the desired width in pixels
+              height={150} // Set the desired height in pixels
+            />
+            <p className="text-sm">Co-Sponsor 2 Company Name</p>
+          </div>
+
+          {/* Miscellaneous Sponsors */}
+          <div className="text-center mb-4">
+            <img
+              src={TitleSponsor}
+              alt="misc-sponsor-1"
+              className="max-w-full h-auto mb-2"
+              width={100} // Set the desired width in pixels
+              height={150} // Set the desired height in pixels
+            />
+            <p className="text-sm">Miscellaneous Sponsor 1 Company Name</p>
+          </div>
+
+          <div className="text-center mb-4">
+            <img
+              src={TitleSponsor}
+              alt="misc-sponsor-2"
+              className="max-w-full h-auto mb-2"
+              width={100} // Set the desired width in pixels
+              height={150} // Set the desired height in pixels
+            />
+            <p className="text-sm">Miscellaneous Sponsor 2 Company Name</p>
+          </div>
         </div>
       </div>
     </div>
