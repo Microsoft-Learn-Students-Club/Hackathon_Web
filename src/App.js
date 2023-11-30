@@ -10,30 +10,49 @@ import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
-import YetToRevealPage from "./components/YetToRevealPage"; // Create this component
+import YetToRevealPage from "./components/YetToRevealPage";
+import Introduction from "./components/Introduction"; // Import your AnimatedLogo component
 
 function App() {
-  const [showMainContent, setShowMainContent] = useState(false);
+  const [showIntroduction, setShowIntroduction] = useState(false);
+  const [showYetToRevealPage, setShowYetToRevealPage] = useState(false);
 
   useEffect(() => {
-    // const revealDate = new Date("January 1, 2024 00:00:00 GMT+0530");
-    const revealDate = new Date("November 30, 2023 18:00:00 GMT+0530");
-    // const revealDate = new Date("November 30, 2023 15:35:00 GMT+0530");
+    const revealDate = new Date("January 1, 2023 00:00:00 GMT+0530");
     const currentDate = new Date();
 
-    // Show main content after reveal date
-    if (currentDate >= revealDate) {
-      setShowMainContent(true);
+    // Show YetToRevealPage until reveal date
+    if (currentDate < revealDate) {
+      setShowYetToRevealPage(true);
+    } else {
+      // Show Introduction after reveal date
+      setShowIntroduction(true);
+
+      // After 2 seconds, hide Introduction and set showRemainingComponents to true
+      const delay = setTimeout(() => {
+        setShowIntroduction(false);
+        setShowRemainingComponents(true);
+      }, 2000);
+
+      // Clear the timeout when the component is unmounted
+      return () => clearTimeout(delay);
     }
   }, []);
 
+  const [showRemainingComponents, setShowRemainingComponents] = useState(false);
+
   return (
     <div className="App bg-black">
-      {/* Display CountdownPage before January 1st */}
-      {!showMainContent && <YetToRevealPage />}
+      {/* Display YetToRevealPage until January 1st */}
+      {showYetToRevealPage && <YetToRevealPage className="yet-to-reveal" />}
 
-      {/* Display main content after January 1st */}
-      {showMainContent && (
+      {/* Display Introduction after January 1st */}
+      {showIntroduction && (
+        <Introduction className="introduction" />
+      )}
+
+      {/* Display other components after a delay */}
+      {showRemainingComponents && (
         <>
           <Home />
           <About />

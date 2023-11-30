@@ -38,17 +38,20 @@ const Domains = () => {
             {domains.map((domain, index) => (
               <div
                 key={index}
-                className="bg-neutral-400 p-4 sm:p-6 rounded-lg shadow-md"
+                className="rounded-md border border-white p-4 sm:p-6 shadow-md transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
               >
-                <img
-                  src={domain.image}
-                  alt={domain.title}
-                  className="w-full h-80 object-cover mb-4 rounded-md"
-                />
-                <h3 className="text-xl text-black font-bold mb-2">
+                <div className="relative">
+                  <img
+                    src={domain.image}
+                    alt={domain.title}
+                    className="w-full h-80 object-cover mb-4 rounded-md"
+                  />
+                </div>
+                <h3 className="text-xl text-white font-bold mb-2">
                   {domain.title}
                 </h3>
-                <p className="text-black text-sm">{domain.description}</p>
+                <p className="text-white text-sm">{domain.description}</p>
+                
               </div>
             ))}
           </div>

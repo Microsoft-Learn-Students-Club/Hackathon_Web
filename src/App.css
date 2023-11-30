@@ -2,7 +2,22 @@
   z-index: 2;
   text-align: center;
   font-family: 'Product Sans', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Apply a fade transition to the Introduction component */
+.introduction {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Apply a fade transition to the YetToRevealPage component */
+.yet-to-reveal {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
 
 .App-logo {
   height: 40vmin;

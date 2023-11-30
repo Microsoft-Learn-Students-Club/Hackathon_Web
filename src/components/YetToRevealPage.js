@@ -7,7 +7,7 @@ const YetToRevealPage = () => {
       <main className="grid h-screen place-items-center bg-white text-slate-950 px-6 lg:px-8">
         <div className="text-center">
           <p className="text-3xl font-bold text-slate-950">
-            <i>Oops! You came too early. We're still building this page...</i>
+            <i>Oops! You came little early. We're still building this page...</i>
           </p>
 
           <img

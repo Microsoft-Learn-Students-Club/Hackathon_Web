@@ -143,7 +143,7 @@ const Home = () => {
           >
             <FontAwesomeIcon
               icon={faAngleUp}
-              style={{ color: "#ffffff", fontSize: "1.5rem" }}
+              style={{ color: "#ffffff", fontSize: "2 rem" }}
             />
           </button>
         )}
