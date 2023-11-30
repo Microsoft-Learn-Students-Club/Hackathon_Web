@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
 import Domains from "./components/Domains";
-// import Registration from "./components/Registration";
 import Schedule from "./components/Schedule";
 import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
@@ -11,38 +10,43 @@ import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
-// import ParticlesComponent from "./components/Particles";
-
+import YetToRevealPage from "./components/YetToRevealPage"; // Create this component
 
 function App() {
-
-  const [showAbout, setShowAbout] = useState(false);
+  const [showMainContent, setShowMainContent] = useState(false);
 
   useEffect(() => {
-    // Add a delay of 1ms before showing the About section
-    const delay = setTimeout(() => {
-      setShowAbout(true);
-    }, 1);
+    // const revealDate = new Date("January 1, 2024 00:00:00 GMT+0530");
+    const revealDate = new Date("November 30, 2023 18:00:00 GMT+0530");
+    // const revealDate = new Date("November 30, 2023 15:35:00 GMT+0530");
+    const currentDate = new Date();
 
-    // Clear the timeout when the component is unmounted
-    return () => clearTimeout(delay);
+    // Show main content after reveal date
+    if (currentDate >= revealDate) {
+      setShowMainContent(true);
+    }
   }, []);
 
   return (
     <div className="App bg-black">
-      {/* <ParticlesComponent /> */}
-      <Home />
-      {showAbout && <About />}
+      {/* Display CountdownPage before January 1st */}
+      {!showMainContent && <YetToRevealPage />}
 
-      {/* <Registration /> */}
-      <Domains />
-      <Schedule />
-      <GeneralGuidelines />
-      <PrizePodium />
-      <Sponsors />
-      <FAQs />
-      <ContactUs />
-      <Footer />
+      {/* Display main content after January 1st */}
+      {showMainContent && (
+        <>
+          <Home />
+          <About />
+          <Domains />
+          <Schedule />
+          <GeneralGuidelines />
+          <PrizePodium />
+          <Sponsors />
+          <FAQs />
+          <ContactUs />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

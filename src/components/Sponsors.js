@@ -20,7 +20,7 @@ const Sponsors = () => {
             width={100} // Set the desired width in pixels
             height={150} // Set the desired height in pixels
           />
-          <p className="text-sm">ABCD</p>
+          <p className="text-sm">Title Sponsor Name here</p>
         </div>
       </div>
 
