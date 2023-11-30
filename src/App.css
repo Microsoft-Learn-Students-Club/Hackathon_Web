@@ -1,6 +1,7 @@
 .App {
+  z-index: 2;
   text-align: center;
-  font-family: Helvetica;
+  font-family: 'Product Sans', 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -12,6 +13,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.particles{
+  position: absolute;
+  z-index: 0;
 }
 
 .App-header {
