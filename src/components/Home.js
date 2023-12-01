@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo.png";
 import "./style/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ import {
   faLinkedin,
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
+import Background from "./Background";
 
 const Home = () => {
   const targetDate = new Date("February 17, 2024 00:00:00 GMT+0530").getTime();
@@ -78,7 +79,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-black p-4 md:p-8 text-center min-h-screen flex flex-col justify-center items-center">
+    <div className="home p-4 md:p-8 text-center min-h-screen flex flex-col justify-center items-center">
+    <Background></Background>
       <p className="text-white mt-6 text-2xl md:text-3xl font-semibold">
         Welcome to
       </p>
