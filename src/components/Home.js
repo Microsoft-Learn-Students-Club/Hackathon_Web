@@ -84,11 +84,11 @@ const Home = () => {
       <p className="text-white mt-6 text-2xl md:text-3xl font-semibold">
         Welcome to
       </p>
-      <h1 className="font-bold text-transparent text-3xl md:text-8xl mt-2 bg-clip-text bg-gradient-to-l from-rose-950 via-purple-400 to-purple-800">
+      <h1 className="font-bold text-transparent text-3xl md:text-8xl mt-2 bg-clip-text bg-gradient-to-l from-rose-950 via-purple-400 to-purple-800" style={{ zIndex: 1 }}>
         MLSC Codefest <br />{" "}
         <img className="logo-img mt-2" src={logo} alt="Logo" />
       </h1>
-      <div className="flex space-x-4 mt-6">
+      <div className="flex space-x-4 mt-6" style={{ zIndex: 1 }}>
         <a
           href="https://instagram.com/mlsc_vcet?igshid=OGQ5ZDc2ODk2ZA=="
           target="_blank"
@@ -134,18 +134,18 @@ const Home = () => {
         </p>
         <button
           onClick={handleRegistrationClick}
-          className="bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-semibold py-2 px-4 rounded-full mt-6"
+          className="bg-purple-800 hover:bg-purple-400 text-white font-semibold py-2 px-4 rounded-xl mt-6"
         >
           Register Now
         </button>
         {showScrollButton && (
           <button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 bg-purple-500 hover:bg-purple-400 bg-opacity-70 text-white font-bold py-2 px-4 rounded-full"
+            className="fixed bottom-6 right-6 bg-white bg-opacity-70 text-white font-bold py-2 px-4 rounded-full"
           >
             <FontAwesomeIcon
               icon={faAngleUp}
-              style={{ color: "#ffffff", fontSize: "2 rem" }}
+              style={{ color: "#800080", fontSize: "2 rem" }}
             />
           </button>
         )}

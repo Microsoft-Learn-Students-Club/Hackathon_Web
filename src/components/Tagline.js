@@ -1,5 +1,3 @@
-// RotatingTagline.js
-
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,21 +5,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './style/RotatingTagline.css';
 
+import Image1 from '../assets/Create.png'; // Replace with your actual image paths
+import Image2 from '../assets/Innovate.png';
+import Image3 from '../assets/Transform.png';
+
 const RotatingTagline = () => {
-  const taglines = [
-    {
-      word: 'Innovate',
-      description: "To bring forth original and inventive ideas, concepts, or solutions. It's about thinking outside the box, exploring cutting-edge technologies, and proposing novel approaches to problem-solving.",
-    },
-    {
-      word: 'Create',
-      description: "To actively develop and build tangible projects based on the innovative ideas conceived during the hackathon. It involves coding, designing, and crafting solutions that go beyond conceptualization.",
-    },
-    {
-      word: 'Transform',
-      description: "To effect significant change or improvement through the implementation of innovative creations. It signifies the potential of projects developed during the hackathon to make a meaningful impact, whether by solving real-world problems, enhancing user experiences, or advancing technology in a transformative way.",
-    },
-  ];
+  const images = [Image1, Image2, Image3]; // Replace with your actual image variables or paths
 
   const settings = {
     dots: false,
@@ -37,10 +26,9 @@ const RotatingTagline = () => {
   return (
     <div className="rotating-tagline-container">
       <Slider {...settings}>
-        {taglines.map((tagline, index) => (
+        {images.map((image, index) => (
           <div key={index} className="tagline-item">
-            <h2 className="text-3xl font-bold mb-2 text-white">{tagline.word}</h2>
-            <p className="text-lg text-white text-justify">{tagline.description}</p>
+            <img src={image} alt={`${index + 1}`} className="rotating-tagline-container" />
           </div>
         ))}
       </Slider>

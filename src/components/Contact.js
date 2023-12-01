@@ -11,7 +11,7 @@ const ContactUs = () => {
       <div className="flex flex-col md:flex-row justify-center">
         {/* Contact Information */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
-          <h3 className="lg:text-2xl font-semibold text-xl mt-2 mb-2 lg:text-left md:text-center lg:px-20">
+          <h3 className="lg:text-2xl font-semibold text-xl mt-2 mb-2 lg:text-center md:text-center lg:px-20">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
             Vidyavardhini's College of Engineering and Technology
           </h3>
@@ -36,8 +36,8 @@ const ContactUs = () => {
             </p>
           </div>
           <div>
-            <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="lg" />
+            <p className="text-xl md:text-base lg:text-left md:text-center lg:px-20">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="2xl" />
               Email: <a href="mailto:mlsc@vcet.edu.in">mlsc@vcet.edu.in</a>
             </p>
           </div>

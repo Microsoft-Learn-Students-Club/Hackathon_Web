@@ -1,10 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import WebDevImage from "../assets/web_dev.png"; // Replace with your actual image URLs
 import AppDevImage from "../assets/app_dev.png";
 import AIMLImage from "../assets/web_dev.png";
 import "./style/sectionLine.css";
-import { motion } from "framer-motion";
-
 
 const Domains = () => {
   const domains = [
@@ -39,11 +38,10 @@ const Domains = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {domains.map((domain, index) => (
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
                 key={index}
-                className="rounded-md border border-white p-4 sm:p-6 shadow-md"
+                className="rounded-md border bg-gradient-to-b to-purple-800 from-black border-white p-4 sm:p-6 shadow-md"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
               >
                 <div className="relative">
                   <img
