@@ -4,6 +4,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./style/sectionLine.css";
 
 const FAQs = () => {
+  const [hoveredQuestion, setHoveredQuestion] = useState(null);
   const [expandedQuestions, setExpandedQuestions] = useState([]);
 
   const toggleQuestion = (index) => {
@@ -19,6 +20,14 @@ const FAQs = () => {
     }
 
     setExpandedQuestions(newExpandedQuestions);
+  };
+
+  const handleMouseEnter = (index) => {
+    setHoveredQuestion(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredQuestion(null);
   };
 
   const faqsData = [
@@ -72,7 +81,9 @@ const FAQs = () => {
         {faqsData.map((faq, index) => (
           <div
             key={index}
-            className="rounded p-4 mb-4 border border-white text-left relative"
+            className="rounded p-4 mb-4 border border-purple-500 text-left relative hover:bg-purple-500 hover:border-purple-500 transition-colors duration-300"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
           >
             <div className="flex justify-between items-center">
               <div
@@ -89,7 +100,7 @@ const FAQs = () => {
                 onClick={() => toggleQuestion(index)}
               />
             </div>
-            {expandedQuestions.includes(index) && (
+            {hoveredQuestion === index && (
               <div className="mt-2">
                 <p>{faq.answer}</p>
               </div>
