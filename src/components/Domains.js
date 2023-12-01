@@ -3,6 +3,8 @@ import WebDevImage from "../assets/web_dev.png"; // Replace with your actual ima
 import AppDevImage from "../assets/app_dev.png";
 import AIMLImage from "../assets/web_dev.png";
 import "./style/sectionLine.css";
+import { motion } from "framer-motion";
+
 
 const Domains = () => {
   const domains = [
@@ -36,9 +38,12 @@ const Domains = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {domains.map((domain, index) => (
-              <div
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
                 key={index}
-                className="rounded-md border border-white p-4 sm:p-6 shadow-md transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+                className="rounded-md border border-white p-4 sm:p-6 shadow-md"
               >
                 <div className="relative">
                   <img
@@ -51,8 +56,7 @@ const Domains = () => {
                   {domain.title}
                 </h3>
                 <p className="text-white text-sm">{domain.description}</p>
-                
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

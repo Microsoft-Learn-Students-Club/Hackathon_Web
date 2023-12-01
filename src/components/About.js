@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from "react";
 import RotatingTagline from "./Tagline";
 import aboutImage from "../assets/hackathon-2.jpeg"; // Replace with the actual path to your image
+import { motion, useAnimation } from "framer-motion";
 
 const About = () => {
   const [isButtonsEnabled, setButtonsEnabled] = useState(false);
+  const controls = useAnimation();
 
   const handleRegistrationClick = () => {
     window.location.href = "https://www.google.com"; // Replace with your actual registration link
@@ -26,9 +28,15 @@ const About = () => {
 
   useEffect(() => {
     setButtonsEnabled(areConditionsMet());
+    controls.start({ x: 0 });
   }, []);
   return (
-    <div className="p-4 md:p-8 text-center md:flex justify-center items-center">
+    <motion.div
+      initial={{ x: -1500 }} // Initial position off-screen to the left
+      animate={controls}
+      transition={{ delay: 1, duration: 1 }}
+      className="p-4 md:p-8 text-center md:flex justify-center items-center"
+    >
       {/* Left Side: Image */}
       <div className="w-full md:w-1/2 mb-4 md:mb-0">
         <img
@@ -88,7 +96,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
