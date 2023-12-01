@@ -11,14 +11,14 @@ import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
 import YetToRevealPage from "./components/YetToRevealPage";
-import Introduction from "./components/Introduction"; // Import your AnimatedLogo component
+// import Introduction from "./components/Introduction"; // Import your AnimatedLogo component
 
 function App() {
-  const [showIntroduction, setShowIntroduction] = useState(false);
+  // const [showIntroduction, setShowIntroduction] = useState(false);
   const [showYetToRevealPage, setShowYetToRevealPage] = useState(false);
 
   useEffect(() => {
-    const revealDate = new Date("January 1, 2023 00:00:00 GMT+0530");
+    const revealDate = new Date("January 1, 2023 00:00:00 GMT+0530");   // Change the date to January 1st of the next year
     const currentDate = new Date();
 
     // Show YetToRevealPage until reveal date
@@ -26,11 +26,11 @@ function App() {
       setShowYetToRevealPage(true);
     } else {
       // Show Introduction after reveal date
-      setShowIntroduction(true);
+      // setShowIntroduction(true);
 
       // After 2 seconds, hide Introduction and set showRemainingComponents to true
       const delay = setTimeout(() => {
-        setShowIntroduction(false);
+        // setShowIntroduction(false);
         setShowRemainingComponents(true);
       }, 2000);
 
@@ -47,9 +47,9 @@ function App() {
       {showYetToRevealPage && <YetToRevealPage className="yet-to-reveal" />}
 
       {/* Display Introduction after January 1st */}
-      {showIntroduction && (
+      {/* {showIntroduction && (
         <Introduction className="introduction" />
-      )}
+      )} */}
 
       {/* Display other components after a delay */}
       {showRemainingComponents && (
