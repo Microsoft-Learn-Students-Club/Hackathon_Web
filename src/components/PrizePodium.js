@@ -4,13 +4,21 @@ import "./style/sectionLine.css";
 import { motion } from "framer-motion";
 
 const PrizePodium = () => {
+  const fadeInAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1, delay: 7 } },
+  };
   return (
-    <div className="p-4 md:p-8">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInAnimation}
+      className="p-4 md:p-8"
+    >
       <h2 className="text-3xl font-bold mb-2 section_header text-white">
         <hr /> <span>Prizes up for grabs!</span>
         <hr />
       </h2>
-
       <div className="flex flex-col items-center justify-center p-10 text-white md:p-20">
         {/* Component Start */}
         <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mt-8">
@@ -87,7 +95,10 @@ const PrizePodium = () => {
         </div>
         {/* Component End */}
       </div>
-    </div>
+      <div className="text-white text-sm ml-auto">
+        *Prizes are for each track
+      </div>
+    </motion.div>
   );
 };
 

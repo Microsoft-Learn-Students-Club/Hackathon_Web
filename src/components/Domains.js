@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import WebDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
-import AppDevImage from "../assets/AppDev.JPEG";
+import AppDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
+import WebDevImage from "../assets/AppDev.JPEG";
 import AIMLImage from "../assets/AIML.JPEG";
 import "./style/sectionLine.css";
 
@@ -41,7 +41,7 @@ const Domains = () => {
       <motion.div 
       initial={{ x: 1500 }} // Initial position off-screen to the left
       animate={controls}
-      transition={{ delay: 2, duration: 0.5 }} 
+      transition={{ delay: 3, duration: 0.5 }} 
       className="text-white py-8 md:py-16">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

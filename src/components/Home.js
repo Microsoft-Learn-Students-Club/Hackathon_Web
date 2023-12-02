@@ -9,11 +9,27 @@ import {
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import Background from "./Background";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const targetDate = new Date("February 17, 2024 00:00:00 GMT+0530").getTime();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   const [showScrollButton, setShowScrollButton] = useState(false);
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 1 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
+  };
+
+  const fadeInVariant = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
 
   const handleRegistrationClick = () => {
     window.location.href = "https://www.google.com"; // Replace with your actual registration link
@@ -80,15 +96,61 @@ const Home = () => {
 
   return (
     <div className="home p-4 md:p-8 text-center min-h-screen flex flex-col justify-center items-center">
-    <Background></Background>
-      <p className="text-white mt-6 text-2xl md:text-3xl font-semibold">
-        Welcome to
-      </p>
-      <h1 className="font-bold text-transparent text-3xl md:text-8xl mt-2 bg-clip-text bg-gradient-to-l from-rose-950 via-purple-400 to-purple-800" style={{ zIndex: 1 }}>
-        MLSC Codefest <br />{" "}
+      <Background></Background>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="text-white mt-6 text-2xl md:text-3xl font-semibold"
+      >
+        {["W", "e", "l", "c", "o", "m", "e"].map((char, index) => (
+          <motion.span
+            key={index}
+            variants={textVariants}
+            style={{ display: "inline-block" }}
+          >
+            {char}
+          </motion.span>
+        ))}
+        <motion.span
+          variants={textVariants}
+          style={{ display: "inline-block", marginLeft: "0.2em" }}
+        >
+          t
+        </motion.span>
+        <motion.span
+          variants={textVariants}
+          style={{ display: "inline-block" }}
+        >
+          o
+        </motion.span>
+      </motion.div>
+
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="font-bold text-transparent text-3xl md:text-8xl mt-2 bg-clip-text bg-gradient-to-r from-purple-800 via-purple-400 to-purple-800"
+        style={{ zIndex: 1 }}
+      >
+        MLSC Codefest
+      </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        style={{ zIndex: 1 }}
+      >
         <img className="logo-img mt-2" src={logo} alt="Logo" />
-      </h1>
-      <div className="flex space-x-4 mt-6" style={{ zIndex: 1 }}>
+      </motion.h1>
+      <motion.div
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 1, delay: 1.8 }}
+        className="flex space-x-4 mt-6"
+        style={{ zIndex: 1 }}
+      >
         <a
           href="https://instagram.com/mlsc_vcet?igshid=OGQ5ZDc2ODk2ZA=="
           target="_blank"
@@ -119,16 +181,28 @@ const Home = () => {
             style={{ color: "#ffffff", fontSize: "1.5rem" }}
           />
         </a>
-      </div>
-      <div className="text-lg md:text-2xl text-white mt-4 md:mt-8">
+      </motion.div>
+      <motion.div
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 1, delay: 1.8 }}
+        className="text-lg md:text-2xl text-white mt-4 md:mt-8"
+      >
         <p>
           <span className="text-3xl md:text-6xl">{timeRemaining.days}</span>{" "}
           Days &nbsp;
-          <span className="text-3xl md:text-6xl">{timeRemaining.hours}</span>{" "}
+          <span className="text-3xl md:text-6xl">
+            {timeRemaining.hours}
+          </span>{" "}
           Hours &nbsp;
-          <span className="text-3xl md:text-6xl">{timeRemaining.minutes}</span>{" "}
+          <span className="text-3xl md:text-6xl">
+            {timeRemaining.minutes}
+          </span>{" "}
           Minutes and&nbsp;
-          <span className="text-3xl md:text-6xl">{timeRemaining.seconds}</span>{" "}
+          <span className="text-3xl md:text-6xl">
+            {timeRemaining.seconds}
+          </span>{" "}
           Seconds left <br />
           The Final Countdown to Codefest Thrills! 🚀
         </p>
@@ -149,7 +223,7 @@ const Home = () => {
             />
           </button>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };

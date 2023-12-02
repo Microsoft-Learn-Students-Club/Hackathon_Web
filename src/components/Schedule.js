@@ -26,7 +26,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 2, duration: 0.5 }}
+              transition={{ delay: 4, duration: 0.5 }}
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white"
             >
                 <h3 className="font-semibold text-lg mb-1">
@@ -47,7 +47,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 2.2, duration: 0.5 }}
+              transition={{ delay: 4.1, duration: 0.5 }}
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1 text-right">
                 10:00 AM - Onwards
@@ -67,7 +67,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 2.4, duration: 0.5 }} className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
+              transition={{ delay: 4.2, duration: 0.5 }} className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 12:00 PM - 01:00 PM
               </h3>
@@ -84,7 +84,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 2.6, duration: 0.5 }}
+              transition={{ delay: 4.3, duration: 0.5 }}
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 05:00 PM - 05:30 PM
@@ -102,7 +102,7 @@ const Schedule = () => {
             <motion.div
             initial={{ x: -1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 2.8, duration: 0.5 }}
+            transition={{ delay: 4.4, duration: 0.5 }}
             className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 07:00 PM - 09:00 PM
@@ -120,7 +120,7 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: -1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 3, duration: 0.5 }}
+            transition={{ delay: 4.5, duration: 0.5 }}
             className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 09:00 PM - 10:00 PM
@@ -151,7 +151,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: 1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 3.2, duration: 0.5 }} 
+              transition={{ delay: 5, duration: 0.5 }} 
               className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
                 01:00 AM - 01:30 AM
@@ -169,7 +169,7 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 3.4, duration: 0.5 }} 
+            transition={{ delay: 5.1, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
                 07:30 AM - 08:00 AM
@@ -189,7 +189,7 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 3.6, duration: 0.5 }} 
+            transition={{ delay: 5.2, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
                 08:00 AM - 10:00 AM
@@ -209,7 +209,7 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 3.8, duration: 0.5 }} 
+            transition={{ delay: 5.3, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1 text-left">
                 10:00 AM - 10:30 AM
@@ -229,7 +229,7 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 4, duration: 0.5 }} 
+            transition={{ delay: 5.4, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1 text-left">
                 12:00 PM - 02:00 PM
