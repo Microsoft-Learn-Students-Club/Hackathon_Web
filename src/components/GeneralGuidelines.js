@@ -25,36 +25,36 @@ const GeneralGuidelines = () => {
         <hr />
       </h2>
       <div className="px-12 mt-10 md:px-12">
-        <ul className="text-left list-disc mb-10 px-4 py-4 md:py-8 leading-relaxed bg-gradient-to-b from-purple-800 to-black rounded-lg">
-          <li className="mb-4 text-base md:text-lg">
+        <ul className="text-left list-disc mb-10 px-4 py-4 md:py-4 md:px-1 leading-relaxed bg-gradient-to-b from-purple-800 to-black rounded-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             All participants are requested to get their identities verified
             beforehand.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             Problem Statements will be released on Devfolio, Discord, WhatsApp,
             and here by 16th of February.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             Each team should comprise a minimum of 2 and a maximum of 4 members,
             including the team leader. Team members can be from different
             colleges.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             Teams will be shortlisted based on their Devfolio profile.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             The hackathon format includes 24 hours of coding. After that, teams
             may present their solutions to the judges.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             Results of this round will be announced after all presentations are
             reviewed by the judges.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             The participating teams must select any one problem statement to
             work on and should develop a viable software solution for the same.
           </li>
-          <li className="mb-4 text-base md:text-lg">
+          <li className="mb-4 text-base md:text-lg ml-4">
             Teams can freely use available servers or their own servers for
             developing and presenting their product.
           </li>

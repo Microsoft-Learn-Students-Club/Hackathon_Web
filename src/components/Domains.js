@@ -1,11 +1,16 @@
-import React from "react";
-import { motion } from "framer-motion";
-import WebDevImage from "../assets/web_dev.png"; // Replace with your actual image URLs
-import AppDevImage from "../assets/app_dev.png";
-import AIMLImage from "../assets/web_dev.png";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import WebDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
+import AppDevImage from "../assets/AppDev.JPEG";
+import AIMLImage from "../assets/AIML.JPEG";
 import "./style/sectionLine.css";
 
 const Domains = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ x: 0 });
+  }, []);
   const domains = [
     {
       title: "Web Development",
@@ -33,7 +38,11 @@ const Domains = () => {
         <span>Domains</span>
         <hr />
       </h2>
-      <div className="text-white py-8 md:py-16">
+      <motion.div 
+      initial={{ x: 1500 }} // Initial position off-screen to the left
+      animate={controls}
+      transition={{ delay: 2, duration: 0.5 }} 
+      className="text-white py-8 md:py-16">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {domains.map((domain, index) => (
@@ -58,7 +67,7 @@ const Domains = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
