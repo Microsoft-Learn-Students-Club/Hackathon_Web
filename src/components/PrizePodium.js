@@ -19,7 +19,6 @@ const PrizePodium = () => {
         <hr /> <span>Prizes up for grabs!</span>
         <hr />
       </h2>
-
       <div className="flex flex-col items-center justify-center p-10 text-white md:p-20">
         {/* Component Start */}
         <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mt-8">
@@ -95,6 +94,9 @@ const PrizePodium = () => {
           </motion.div>
         </div>
         {/* Component End */}
+      </div>
+      <div className="text-white text-sm ml-auto">
+        *Prizes are for each track
       </div>
     </motion.div>
   );

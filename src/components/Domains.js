@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import WebDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
-import AppDevImage from "../assets/AppDev.JPEG";
+import AppDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
+import WebDevImage from "../assets/AppDev.JPEG";
 import AIMLImage from "../assets/AIML.JPEG";
 import "./style/sectionLine.css";
 

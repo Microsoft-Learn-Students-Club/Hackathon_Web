@@ -18,7 +18,8 @@ function App() {
   const [showYetToRevealPage, setShowYetToRevealPage] = useState(false);
 
   useEffect(() => {
-    const revealDate = new Date("January 1, 2023 00:00:00 GMT+0530"); // Change the date to January 1st of the next year
+    // const revealDate = new Date("January 1, 2024 00:00:00 GMT+0530"); // Change the date to January 1st of the next year
+    const revealDate = new Date("December 3, 2023 01:00:00 GMT+0530"); // Change the date to January 1st of the next year
     const currentDate = new Date();
 
     // Show YetToRevealPage until reveal date
