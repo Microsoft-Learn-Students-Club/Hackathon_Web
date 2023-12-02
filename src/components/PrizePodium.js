@@ -4,8 +4,17 @@ import "./style/sectionLine.css";
 import { motion } from "framer-motion";
 
 const PrizePodium = () => {
+  const fadeInAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1, delay: 7 } },
+  };
   return (
-    <div className="p-4 md:p-8">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInAnimation}
+      className="p-4 md:p-8"
+    >
       <h2 className="text-3xl font-bold mb-2 section_header text-white">
         <hr /> <span>Prizes up for grabs!</span>
         <hr />
@@ -87,7 +96,7 @@ const PrizePodium = () => {
         </div>
         {/* Component End */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

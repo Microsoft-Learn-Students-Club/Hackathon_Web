@@ -35,7 +35,7 @@ const About = () => {
     <motion.div
       initial={{ x: -1500 }} // Initial position off-screen to the left
       animate={controls}
-      transition={{ delay: 1, duration: 1 }}
+      transition={{ delay: 2, duration: 1 }}
       className="p-4 md:p-8 text-center md:flex justify-center items-center"
     >
       {/* Left Side: Image */}

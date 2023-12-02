@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./style/sectionLine.css";
+import { motion } from "framer-motion";
 
 const GeneralGuidelines = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(true);
+
+  const fadeAnimation = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 6.4 } },
+  };
 
   // Function to check whether conditions for enabling the button are met
   const areConditionsMet = () => {
@@ -18,7 +24,12 @@ const GeneralGuidelines = () => {
   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   return (
-    <div className="text-white py-8 px-4 text-center">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeAnimation}
+      className="text-white py-8 px-4 text-center"
+    >
       <h2 className="text-3xl font-bold mb-4 text-white section_header md:text-md">
         <hr />
         <span>General Guidelines</span>
@@ -71,7 +82,7 @@ const GeneralGuidelines = () => {
         Submit Your Project
       </button>
       {/* Add more content as needed */}
-    </div>
+    </motion.div>
   );
 };
 
