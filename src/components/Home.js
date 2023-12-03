@@ -208,7 +208,7 @@ const Home = () => {
         </p>
         <button
           onClick={handleRegistrationClick}
-          className="bg-purple-800 hover:bg-purple-400 text-white font-semibold py-2 px-4 rounded-xl mt-6"
+          className="bg-purple-800 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl mt-6"
         >
           Register Now
         </button>
