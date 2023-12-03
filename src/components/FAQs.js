@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./style/sectionLine.css";
+import { motion, useAnimation } from "framer-motion";
+
 
 const FAQs = () => {
   const [hoveredQuestion, setHoveredQuestion] = useState(null);
   const [expandedQuestions, setExpandedQuestions] = useState([]);
+
+  const controls = useAnimation();
+
+  
 
   const toggleQuestion = (index) => {
     const newExpandedQuestions = [...expandedQuestions];
@@ -69,6 +75,10 @@ const FAQs = () => {
     // Add more FAQs as needed
   ];
 
+  useEffect(() => {
+    controls.start({ x: 0 });
+  }, []);
+
   return (
     <div className="px-8">
       <h2 className="text-2xl md:text-3xl text-white font-bold mb-4 section_header">
@@ -76,8 +86,12 @@ const FAQs = () => {
         <span>Frequently Asked Questions</span>
         <hr />
       </h2>
-
-      <div className="text-white p-4 md:p-8 px-4 md:px-28">
+      
+      <motion.div 
+      initial={{ x: -1500 }} // Initial position off-screen to the left
+      animate={controls}
+      transition={{ delay: 8.5, duration: 1 }} 
+      className="text-white p-4 md:p-8 px-4 md:px-28">
         {faqsData.map((faq, index) => (
           <div
             key={index}
@@ -107,7 +121,7 @@ const FAQs = () => {
             )}
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
