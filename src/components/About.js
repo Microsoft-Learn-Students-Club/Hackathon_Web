@@ -39,7 +39,7 @@ const About = () => {
       className="p-4 md:p-8 text-center md:flex justify-center items-center"
     >
       {/* Left Side: Image */}
-      
+
       <div className="w-full md:w-1/2 mb-4 md:mb-0" style={{ zIndex: 1 }}>
         <img
           src={aboutImage}
@@ -51,17 +51,16 @@ const About = () => {
       {/* Right Side: Content */}
       <div className="w-full md:w-1/2 md:pl-8">
         <h2 className="text-3xl font-bold mb-4 text-white mt-8">
-          About MLSC Codefest: Coherence 1.0
+          About Coherence 1.0
         </h2>
         <p className="text-lg mb-4 text-white text-justify">
-          MLSC Codefest: Coherence 1.0 is an exciting hackathon organized by the
-          Microsoft Learn Students Club, VCET. It provides a platform for
-          innovative minds to come together, collaborate, and create amazing
-          projects.
+          Welcome to Coherence 1.0, where innovation knows no bounds! In the heart
+          of our 24-hour hackathon, we unite brilliant minds, fueling a symphony
+          of creativity. Join us on a relentless quest to redefine possibilities
+          and amplify the pulse of tech brilliance!
         </p>
         <RotatingTagline />
       </div>
-      
     </motion.div>
   );
 };

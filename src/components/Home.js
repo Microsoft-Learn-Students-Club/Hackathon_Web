@@ -148,7 +148,7 @@ const Home = () => {
         initial="hidden"
         animate="visible"
         transition={{ duration: 1, delay: 1.8 }}
-        className="flex space-x-4 mt-6"
+        className="flex space-x-4 mt-6 absolute top-12 right-16" // Adjust top and right values as needed
         style={{ zIndex: 1 }}
       >
         <a
@@ -181,6 +181,14 @@ const Home = () => {
             style={{ color: "#ffffff", fontSize: "1.5rem" }}
           />
         </a>
+      </motion.div>
+      <motion.div 
+      variants={fadeInVariant}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 1, delay: 1.8 }}
+      className="text-white text-xl md:text-4xl mt-2">
+          Innovate. Transform. Create.
       </motion.div>
       <motion.div
         variants={fadeInVariant}
