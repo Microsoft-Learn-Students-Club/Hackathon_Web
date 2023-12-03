@@ -1,17 +1,36 @@
 import React from "react";
-import TitleSponsor from "../assets/sponsor_logo.png";
+// import TitleSponsor from "../assets/sponsor_logo.png";
 import "./style/sectionLine.css";
-
+import { motion } from "framer-motion";
 
 const Sponsors = () => {
+  const fadeInVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="text-white p-4 md:p-8 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 section_header"><hr /><span>Our Sponsors</span><hr /></h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 section_header">
+        <hr />
+        <span>Our Sponsors</span>
+        <hr />
+      </h2>
+
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 8.3, duration: 1 }}
+        variants={fadeInVariants}
+      >
+        <h1 className="text-2xl md:text-3xl font-bold m-8">
+          <i>Revealing Soon!</i>
+        </h1>
+      </motion.div>
 
       {/* Title Sponsor */}
-      <div className="mb-4 md:mb-8">
+      {/* <div className="mb-4 md:mb-8">
         <h3 className="text-lg md:text-xl font-semibold mb-2">Title Sponsor</h3>
-        {/* Add your title sponsor details or logo here */}
         <div className="flex flex-col items-center">
           <img
             src={TitleSponsor}
@@ -22,12 +41,11 @@ const Sponsors = () => {
           />
           <p className="text-sm">Title Sponsor Name here</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Co-Sponsors */}
-      <div className="mb-4 md:mb-8">
+      {/* <div className="mb-4 md:mb-8">
         <h3 className="text-lg md:text-xl font-semibold mb-2">Co-Sponsors</h3>
-        {/* Add your co-sponsors details or logos here */}
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
           <img
             src={TitleSponsor}
@@ -44,16 +62,14 @@ const Sponsors = () => {
             height={150} // Set the desired height in pixels
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Miscellaneous Sponsors */}
-      <div>
+      {/* <div>
         <h3 className="text-lg md:text-xl font-semibold mb-2">
           Miscellaneous Sponsors
         </h3>
-        {/* Add your miscellaneous sponsors details or logos here */}
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
-          {/* Add more miscellaneous sponsors as needed */}
           <div className="items-center text-center mb-4">
             <img
               src={TitleSponsor}
@@ -64,7 +80,6 @@ const Sponsors = () => {
             />
           </div>
 
-          {/* Miscellaneous Sponsors */}
           <div className="text-center mb-4">
             <img
               src={TitleSponsor}
@@ -94,7 +109,7 @@ const Sponsors = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

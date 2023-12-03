@@ -6,7 +6,7 @@ import Domains from "./components/Domains";
 import Schedule from "./components/Schedule";
 import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
-// import Sponsors from "./components/Sponsors";
+import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
@@ -61,7 +61,7 @@ function App() {
           <Schedule />
           <GeneralGuidelines />
           <PrizePodium />
-          {/* <Sponsors /> */}
+          <Sponsors />
           <FAQs />
           <ContactUs />
           <Footer />
