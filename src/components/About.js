@@ -30,19 +30,21 @@ const About = () => {
     setButtonsEnabled(areConditionsMet());
     controls.start({ x: 0 });
   }, []);
+
   return (
     <motion.div
       initial={{ x: -1500 }} // Initial position off-screen to the left
       animate={controls}
-      transition={{ delay: 1, duration: 1 }}
+      transition={{ delay: 2, duration: 1 }}
       className="p-4 md:p-8 text-center md:flex justify-center items-center"
     >
       {/* Left Side: Image */}
-      <div className="w-full md:w-1/2 mb-4 md:mb-0">
+      
+      <div className="w-full md:w-1/2 mb-4 md:mb-0" style={{ zIndex: 1 }}>
         <img
           src={aboutImage}
           alt="About Us"
-          className="rounded-md w-full h-full"
+          className="rounded-md w-full h-auto md:w-3/4 mx-auto" // Use responsive classes to make the image full width on small screens and 75% width on medium screens
         />
       </div>
 
@@ -58,44 +60,8 @@ const About = () => {
           projects.
         </p>
         <RotatingTagline />
-        {/* Add more content as needed */}
-        {/* Register function */}
-        <div className="text-white p-8 md:p-16">
-          <h2 className="text-3xl font-semibold text-white">
-            Ready to Ignite Your Creativity?
-          </h2>
-          <p className="text-lg mb-8">
-            Seize the opportunity to showcase your skills and innovate at MLSC
-            Codefest: Coherence 1.0!
-          </p>
-          <button
-            onClick={handleRegistrationClick}
-            className="bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full mb-6"
-          >
-            Register Now
-          </button>
-          <div className="flex justify-center space-x-4">
-            <button
-              onClick={handleProblemStatementClick}
-              className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full ${
-                isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
-              }`}
-              disabled={!isButtonsEnabled}
-            >
-              Problem Statements
-            </button>
-            <button
-              onClick={handleConsentFormClick}
-              className={`bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-full ${
-                isButtonsEnabled ? "" : "opacity-50 cursor-not-allowed"
-              }`}
-              disabled={!isButtonsEnabled}
-            >
-              Consent Form
-            </button>
-          </div>
-        </div>
       </div>
+      
     </motion.div>
   );
 };

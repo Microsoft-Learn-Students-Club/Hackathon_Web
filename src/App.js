@@ -6,7 +6,7 @@ import Domains from "./components/Domains";
 import Schedule from "./components/Schedule";
 import GeneralGuidelines from "./components/GeneralGuidelines";
 import FAQs from "./components/FAQs";
-import Sponsors from "./components/Sponsors";
+// import Sponsors from "./components/Sponsors";
 import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
@@ -18,7 +18,8 @@ function App() {
   const [showYetToRevealPage, setShowYetToRevealPage] = useState(false);
 
   useEffect(() => {
-    const revealDate = new Date("January 1, 2023 00:00:00 GMT+0530");   // Change the date to January 1st of the next year
+    // const revealDate = new Date("January 1, 2024 00:00:00 GMT+0530"); // Change the date to January 1st of the next year
+    const revealDate = new Date("December 3, 2023 01:00:00 GMT+0530"); // Change the date to January 1st of the next year
     const currentDate = new Date();
 
     // Show YetToRevealPage until reveal date
@@ -32,7 +33,7 @@ function App() {
       const delay = setTimeout(() => {
         // setShowIntroduction(false);
         setShowRemainingComponents(true);
-      }, 2000);
+      }, 100);
 
       // Clear the timeout when the component is unmounted
       return () => clearTimeout(delay);
@@ -53,18 +54,18 @@ function App() {
 
       {/* Display other components after a delay */}
       {showRemainingComponents && (
-        <>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Home />
           <About />
           <Domains />
           <Schedule />
           <GeneralGuidelines />
           <PrizePodium />
-          <Sponsors />
+          {/* <Sponsors /> */}
           <FAQs />
           <ContactUs />
           <Footer />
-        </>
+        </div>
       )}
     </div>
   );
