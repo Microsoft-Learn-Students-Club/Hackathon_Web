@@ -41,7 +41,7 @@ const Domains = () => {
       <motion.div 
       initial={{ x: 1500 }} // Initial position off-screen to the left
       animate={controls}
-      transition={{ delay: 3, duration: 0.5 }} 
+      transition={{ delay: 3, duration: 1 }} 
       className="text-white py-8 md:py-16">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

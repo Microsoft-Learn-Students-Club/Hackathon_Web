@@ -15,6 +15,10 @@ const fadeInTransition = {
 };
 
 const PrizePodium = () => {
+  const scaleVariants = {
+    hover: { scale: 1.1 },
+  };
+
   return (
     <div className="px-4 sm:px-8">
       <h2 className="text-3xl font-bold mb-6 sm:mb-12 section_header text-white">
@@ -29,7 +33,11 @@ const PrizePodium = () => {
         transition={fadeInTransition}
       >
         {/* Podium Item 1 */}
-        <motion.div className="text-center flex flex-col items-center mb-4 sm:mb-0">
+        <motion.div
+          className="text-center flex flex-col items-center mb-4 sm:mb-0"
+          whileHover="hover"
+          variants={scaleVariants}
+        >
           <motion.h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
             1st Runner-up
           </motion.h3>
@@ -45,12 +53,16 @@ const PrizePodium = () => {
         </motion.div>
 
         {/* Podium Item 2 (Bigger Image) */}
-        <motion.div className="text-center flex flex-col items-center mb-4 sm:mb-0">
+        <motion.div
+          className="text-center flex flex-col items-center mb-4 sm:mb-0"
+          whileHover="hover"
+          variants={scaleVariants}
+        >
           <motion.h3 className="text-white text-2xl sm:text-4xl font-bold mb-2">
             Winner
           </motion.h3>
           <motion.img
-            className="max-w-full h-auto w-44 sm:w-64" // Adjust the width as needed
+            className="max-w-full h-auto w-44 sm:w-64"
             src={winnerImg}
             alt="Winner"
             style={{ zIndex: 1 }}
@@ -61,7 +73,11 @@ const PrizePodium = () => {
         </motion.div>
 
         {/* Podium Item 3 */}
-        <motion.div className="text-center flex flex-col items-center">
+        <motion.div
+          className="text-center flex flex-col items-center"
+          whileHover="hover"
+          variants={scaleVariants}
+        >
           <motion.h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
             2nd Runner-up
           </motion.h3>
@@ -76,7 +92,7 @@ const PrizePodium = () => {
           </motion.p>
         </motion.div>
       </motion.div>
-      <div className="text-white text-right mr-20 sm:text-right mt-4 mb-2 text-sm">
+      <div className="text-white text-right mr-20 mt-4 mb-2 text-sm">
         *Prizes are for each track
       </div>
     </div>
