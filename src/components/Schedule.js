@@ -30,10 +30,10 @@ const Schedule = () => {
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white"
             >
                 <h3 className="font-semibold text-lg mb-1">
-                  9:00 AM - 9:30 AM
+                  9:00 AM - 10:00 AM
                 </h3>
                 <p className="leading-tight text-justify">
-                  Registration and Welcome
+                Reporting and Registration
                 </p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -50,10 +50,12 @@ const Schedule = () => {
               transition={{ delay: 4.1, duration: 0.5 }}
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1 text-right">
-                10:00 AM - Onwards
+                10:00 AM - 11:30 AM
               </h3>
               <p className="leading-tight text-right">
-                Hackathon Kick-off and Coding Period starts
+              Inauguration Ceremony and <br />
+              Releasing Problem Statements 
+
               </p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -69,9 +71,9 @@ const Schedule = () => {
               animate={controls}
               transition={{ delay: 4.2, duration: 0.5 }} className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
-                12:00 PM - 01:00 PM
+                11:30 PM - Onwards
               </h3>
-              <p className="leading-tight text-justify">Lunch Break</p>
+              <p className="leading-tight text-justify">Coding Starts</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -87,9 +89,9 @@ const Schedule = () => {
               transition={{ delay: 4.3, duration: 0.5 }}
               className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
-                05:00 PM - 05:30 PM
+                01:30 PM - 02:30 PM
               </h3>
-              <p className="leading-tight text-justify">High Tea</p>
+              <p className="leading-tight text-justify">Lunch Break</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -105,9 +107,9 @@ const Schedule = () => {
             transition={{ delay: 4.4, duration: 0.5 }}
             className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
-                07:00 PM - 09:00 PM
+                03:00 PM - 05:00 PM
               </h3>
-              <p className="leading-tight text-justify">Evaluation Round - I</p>
+              <p className="leading-tight text-justify">Mentoring Round - I Starts</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -121,6 +123,42 @@ const Schedule = () => {
             initial={{ x: -1500 }} // Initial position off-screen to the left
             animate={controls}
             transition={{ delay: 4.5, duration: 0.5 }}
+            className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
+              <h3 className="font-semibold text-lg mb-1">
+                05:00 PM - 05:30 PM
+              </h3>
+              <p className="leading-tight text-justify">High Tea</p>
+            </motion.div>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-purple-700 ring-2 ring-white shadow" />
+            </div>
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <motion.div 
+            initial={{ x: -1500 }} // Initial position off-screen to the left
+            animate={controls}
+            transition={{ delay: 4.6, duration: 0.5 }}
+            className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
+              <h3 className="font-semibold text-lg mb-1">
+                08:00 PM - 10:00 PM
+              </h3>
+              <p className="leading-tight text-justify">Mentoring Round - II Starts</p>
+            </motion.div>
+            <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-purple-700 ring-2 ring-white shadow" />
+            </div>
+          </div>
+          <div className="flex flex-row-reverse md:contents">
+            <motion.div 
+            initial={{ x: -1500 }} // Initial position off-screen to the left
+            animate={controls}
+            transition={{ delay: 4.7, duration: 0.5 }}
             className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 09:00 PM - 10:00 PM
@@ -151,7 +189,7 @@ const Schedule = () => {
             <motion.div
               initial={{ x: 1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 5, duration: 0.5 }} 
+              transition={{ delay: 5.2, duration: 0.5 }} 
               className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
                 01:00 AM - 01:30 AM
@@ -169,10 +207,10 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 5.1, duration: 0.5 }} 
+            transition={{ delay: 5.3, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
-                07:30 AM - 08:00 AM
+                08:00 AM - 08:30 AM
               </h3>
               <p className="leading-tight text-justify">
                 Morning Tea and Snacks
@@ -189,13 +227,13 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 5.2, duration: 0.5 }} 
+            transition={{ delay: 5.4, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
-                08:00 AM - 10:00 AM
+                11:30 AM
               </h3>
               <p className="leading-tight text-justify">
-                Evaluation Round - II
+               Coding Ends
               </p>
             </motion.div>
           </div>
@@ -209,30 +247,31 @@ const Schedule = () => {
             <motion.div 
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
-            transition={{ delay: 5.3, duration: 0.5 }} 
-            className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
-              <h3 className="font-semibold text-lg mb-1 text-left">
-                10:00 AM - 10:30 AM
-              </h3>
-              <p className="leading-tight text-left">
-                Coding Period ends and Final Submission Starts
-              </p>
-            </motion.div>
-          </div>
-          <div className="flex md:contents">
-            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-              <div className="h-full w-4 flex items-center justify-center">
-                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
-              </div>
-              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-purple-700 ring-2 ring-white shadow" />
-            </div>
-            <motion.div 
-            initial={{ x: 1500 }} // Initial position off-screen to the left
-            animate={controls}
-            transition={{ delay: 5.4, duration: 0.5 }} 
+            transition={{ delay: 5.5, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1 text-left">
                 12:00 PM - 02:00 PM
+              </h3>
+              <p className="leading-tight text-left">
+                Final Presentation and Judging <br />
+                for Shortlisted teams
+              </p>
+            </motion.div>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-purple-700 ring-2 ring-white shadow" />
+            </div>
+            <motion.div 
+            initial={{ x: 1500 }} // Initial position off-screen to the left
+            animate={controls}
+            transition={{ delay: 5.6, duration: 0.5 }} 
+            className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
+              <h3 className="font-semibold text-lg mb-1 text-left">
+                04:00 PM - 05:00 PM
               </h3>
               <p className="leading-tight text-left">
                 Result Announcement and Felicitation Ceremony
