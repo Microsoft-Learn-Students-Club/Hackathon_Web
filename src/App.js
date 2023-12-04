@@ -11,10 +11,10 @@ import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import PrizePodium from "./components/PrizePodium";
 import YetToRevealPage from "./components/YetToRevealPage";
-// import Introduction from "./components/Introduction"; // Import your AnimatedLogo component
+import Introduction from "./components/Introduction"; // Import your AnimatedLogo component
 
 function App() {
-  // const [showIntroduction, setShowIntroduction] = useState(false);
+  const [showIntroduction, setShowIntroduction] = useState(false);
   const [showYetToRevealPage, setShowYetToRevealPage] = useState(false);
 
   useEffect(() => {
@@ -27,13 +27,13 @@ function App() {
       setShowYetToRevealPage(true);
     } else {
       // Show Introduction after reveal date
-      // setShowIntroduction(true);
+      setShowIntroduction(true);
 
       // After 2 seconds, hide Introduction and set showRemainingComponents to true
       const delay = setTimeout(() => {
-        // setShowIntroduction(false);
+        setShowIntroduction(false);
         setShowRemainingComponents(true);
-      }, 100);
+      }, 6000);
 
       // Clear the timeout when the component is unmounted
       return () => clearTimeout(delay);
@@ -48,9 +48,9 @@ function App() {
       {showYetToRevealPage && <YetToRevealPage className="yet-to-reveal" />}
 
       {/* Display Introduction after January 1st */}
-      {/* {showIntroduction && (
-        <Introduction className="introduction" />
-      )} */}
+      {showIntroduction && (
+        <Introduction />
+      )} 
 
       {/* Display other components after a delay */}
       {showRemainingComponents && (
