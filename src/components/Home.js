@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   const handleRegistrationClick = () => {
-    window.location.href = "https://www.google.com"; // Replace with your actual registration link
+    window.location.href = "#"; // Replace with your actual registration link
   };
 
   function calculateTimeRemaining() {
@@ -216,7 +216,14 @@ const Home = () => {
         </p>
         <button
           onClick={handleRegistrationClick}
-          className="bg-purple-800 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl mt-6"
+          // Disable the button if registration is closed
+          disabled
+          // className="bg-purple-800 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl mt-6"
+          // Disable the button if registration is closed
+          className="bg-purple-900 opacity-50 text-white font-semibold py-2 px-4 rounded-xl mt-6"
+          style={{
+            cursor: "not-allowed",
+          }}
         >
           Register Now
         </button>

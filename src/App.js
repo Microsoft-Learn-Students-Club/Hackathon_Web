@@ -33,7 +33,7 @@ function App() {
       const delay = setTimeout(() => {
         setShowIntroduction(false);
         setShowRemainingComponents(true);
-      }, 6000);
+      }, 3000);
 
       // Clear the timeout when the component is unmounted
       return () => clearTimeout(delay);

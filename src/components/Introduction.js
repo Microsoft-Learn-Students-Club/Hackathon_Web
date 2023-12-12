@@ -55,6 +55,27 @@ const SpinAndFlicker = () => {
         opacity: 1,
         transition: { duration: 0.2 },
       });
+      await flickerControls.start({
+        opacity: 0.3,
+        transition: { duration: 0.2 },
+      });
+      await flickerControls.start({
+        opacity: 0.3,
+        transition: { duration: 0.2 },
+      });
+
+      await flickerControls.start({
+        opacity: 0.7,
+        transition: { duration: 0.2 },
+      });
+      await flickerControls.start({
+        opacity: 1,
+        transition: { duration: 0.2 },
+      });
+      await flickerControls.start({
+        opacity: 1,
+        transition: { duration: 0.2 },
+      });
     };
 
     // Initial animation triggers
@@ -76,7 +97,7 @@ const SpinAndFlicker = () => {
       <br />
       <br />
       <motion.h1 className="text-white text-4xl mt-4" animate={flickerControls}>
-      Endless Possibilities Awaits You.
+      Endless Possibilities Awaits You...
       </motion.h1>
     </div>
   );
