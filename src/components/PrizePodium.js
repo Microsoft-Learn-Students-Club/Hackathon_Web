@@ -88,7 +88,7 @@ const PrizePodium = () => {
             style={{ zIndex: 1 }}
           />
           <motion.p className="text-white text-sm sm:text-xl mt-2">
-            ₹ 3,000 + Certificate
+            ₹ 2,500 + Certificate
           </motion.p>
         </motion.div>
       </motion.div>
