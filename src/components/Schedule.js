@@ -20,14 +20,14 @@ const Schedule = () => {
         <h3 className="text-2xl mb-4 mt-4 text-white font-semibold">
           Day 1 - 17th February 2024
         </h3>
-        <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+        <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50 text-right">
           {/* left */}
           <div className="flex flex-row-reverse md:contents">
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
               transition={{ delay: 4, duration: 0.5 }}
-              className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white"
+              className="col-start-1 col-end-5 p-4 text-right rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white"
             >
                 <h3 className="font-semibold text-lg mb-1">
                   9:00 AM - 10:00 AM
@@ -69,11 +69,11 @@ const Schedule = () => {
             <motion.div
               initial={{ x: -1500 }} // Initial position off-screen to the left
               animate={controls}
-              transition={{ delay: 4.2, duration: 0.5 }} className="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
+              transition={{ delay: 4.2, duration: 0.5 }} className="col-start-1 text-right col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
                 11:30 PM - Onwards
               </h3>
-              <p className="leading-tight text-justify">Coding Starts</p>
+              <p className="leading-tight text-right">Coding Starts</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -91,7 +91,7 @@ const Schedule = () => {
               <h3 className="font-semibold text-lg mb-1">
                 01:30 PM - 02:30 PM
               </h3>
-              <p className="leading-tight text-justify">Lunch Break</p>
+              <p className="leading-tight text-right">Lunch Break</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -127,7 +127,7 @@ const Schedule = () => {
               <h3 className="font-semibold text-lg mb-1">
                 05:00 PM - 05:30 PM
               </h3>
-              <p className="leading-tight text-justify">High Tea</p>
+              <p className="leading-tight text-right">High Tea</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -163,7 +163,7 @@ const Schedule = () => {
               <h3 className="font-semibold text-lg mb-1">
                 09:00 PM - 10:00 PM
               </h3>
-              <p className="leading-tight text-justify">Dinner Break</p>
+              <p className="leading-tight text-right">Dinner Break</p>
             </motion.div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-4 flex items-center justify-center">
@@ -228,9 +228,9 @@ const Schedule = () => {
             initial={{ x: 1500 }} // Initial position off-screen to the left
             animate={controls}
             transition={{ delay: 5.4, duration: 0.5 }} 
-            className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
+            className="col-start-6 col-end-10 p-4 rounded-xl text-left my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1">
-                11:30 AM
+              11:30 AM
               </h3>
               <p className="leading-tight text-justify">
                Coding Ends
