@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import AppDevImage from "../assets/WebDev.JPEG"; // Replace with your actual image URLs
-import WebDevImage from "../assets/AppDev.JPEG";
+import WebAppDevImage from "../assets/WebDev.JPEG"; 
 import AIMLImage from "../assets/AIML.JPEG";
+import BlockchainImage from "../assets/Blockchain.jpeg";
 import "./style/sectionLine.css";
 
 const Domains = () => {
@@ -13,15 +13,15 @@ const Domains = () => {
   }, []);
   const domains = [
     {
-      title: "Web Development",
+      title: "Web/App Development",
       description:
-        "Create interactive and dynamic websites using the latest web technologies.",
-      image: WebDevImage,
+        "Craft responsive websites and cross-platform mobile apps with the latest technologies.",
+      image: WebAppDevImage,
     },
     {
-      title: "App Development",
-      description: "Build mobile applications for iOS and Android platforms.",
-      image: AppDevImage,
+      title: "Blockchain",
+      description: "Empower decentralized solutions and building blockchain applications for the future.",
+      image: BlockchainImage,
     },
     {
       title: "AI/ML",
@@ -29,6 +29,7 @@ const Domains = () => {
         "Explore artificial intelligence and machine learning to solve complex problems.",
       image: AIMLImage,
     },
+    
   ];
 
   return (
