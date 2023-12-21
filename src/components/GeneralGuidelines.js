@@ -35,11 +35,10 @@ const GeneralGuidelines = () => {
           <ul className="text-left list-disc mb-10 px-4 py-4 md:py-4 md:px-1 leading-relaxed bg-gradient-to-b from-purple-800 to-black rounded-lg">
             <li className="mb-4 text-base md:text-lg ml-8">
               All participants are requested to get their identities verified
-              beforehand.
+              beforehand at the Registration desks.
             </li>
             <li className="mb-4 text-base md:text-lg ml-8">
-              Problem Statements will be released on Devfolio, Discord,
-              WhatsApp, and here by 16th of February.
+              Problem Statements will be released on the day of hackathon i.e on 17th February.
             </li>
             <li className="mb-4 text-base md:text-lg ml-8">
               Each team should comprise a minimum of 2 and a maximum of 4
@@ -47,7 +46,10 @@ const GeneralGuidelines = () => {
               different colleges.
             </li>
             <li className="mb-4 text-base md:text-lg ml-8">
-              Teams will be shortlisted based on their Devfolio profile.
+              Participant should be enrolled in a full-time undergraduate degree.
+            </li>
+            <li className="mb-4 text-base md:text-lg ml-8">
+              Teams will be shortlisted based on first come first serve basis.
             </li>
             <li className="mb-4 text-base md:text-lg ml-8">
               The hackathon format includes 24 hours of coding. After that,
@@ -69,7 +71,7 @@ const GeneralGuidelines = () => {
           </ul>
         </div>
 
-        <button
+        {/* <button
           onClick={() => alert("Redirect to submission form")} // Replace with actual submission form URL or logic
           className={`bg-yellow-500 hover:bg-yellow-400 text-purple-800 font-bold py-2 px-4 rounded-full ${
             isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
@@ -77,7 +79,7 @@ const GeneralGuidelines = () => {
           disabled={isButtonDisabled}
         >
           Submit Your Project
-        </button>
+        </button> */}
       </motion.div>
 
       {/* Add more content as needed */}
