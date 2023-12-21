@@ -213,7 +213,7 @@ const Schedule = () => {
                 08:00 AM - 08:30 AM
               </h3>
               <p className="leading-tight text-justify">
-                Morning Tea and Snacks
+                Breakfast
               </p>
             </motion.div>
           </div>
@@ -271,10 +271,30 @@ const Schedule = () => {
             transition={{ delay: 5.6, duration: 0.5 }} 
             className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
               <h3 className="font-semibold text-lg mb-1 text-left">
-                04:00 PM - 05:00 PM
+                04:00 PM - 05:30 PM
               </h3>
               <p className="leading-tight text-left">
                 Result Announcement and Felicitation Ceremony
+              </p>
+            </motion.div>
+          </div>
+          <div className="flex md:contents">
+            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div className="h-full w-4 flex items-center justify-center">
+                <div className="h-full w-1 bg-neutral-500 pointer-events-none" />
+              </div>
+              <div className="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-purple-700 ring-2 ring-white shadow" />
+            </div>
+            <motion.div 
+            initial={{ x: 1500 }} // Initial position off-screen to the left
+            animate={controls}
+            transition={{ delay: 5.7, duration: 0.5 }} 
+            className="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md border bg-purple-700  border-white">
+              <h3 className="font-semibold text-lg mb-1 text-left">
+                05:30 PM
+              </h3>
+              <p className="leading-tight text-left">
+                Dispersal
               </p>
             </motion.div>
           </div>

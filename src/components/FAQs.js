@@ -48,7 +48,7 @@ const FAQs = () => {
     },
     {
       question: "What is the registration cost?",
-      answer: "₹250 per team member.",
+      answer: "Only ₹400 per team.",
     },
     {
       question: "Are travel expenses included too?",

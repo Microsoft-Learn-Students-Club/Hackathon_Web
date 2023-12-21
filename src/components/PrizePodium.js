@@ -48,7 +48,7 @@ const PrizePodium = () => {
             style={{ zIndex: 1 }}
           />
           <motion.p className="text-white text-sm sm:text-xl mt-2">
-            ₹ 5,000 + Certificate
+            ₹ 5,000 + Certificate + <br />Internship Opportunity <br /> + Goodies
           </motion.p>
         </motion.div>
 
@@ -68,7 +68,7 @@ const PrizePodium = () => {
             style={{ zIndex: 1 }}
           />
           <motion.p className="text-white text-sm sm:text-xl mt-2">
-            ₹ 10,000 + Certificate
+            ₹ 10,000 + Certificate + <br />Internship Opportunity + Goodies
           </motion.p>
         </motion.div>
 
@@ -87,8 +87,8 @@ const PrizePodium = () => {
             alt="2nd Runner-up"
             style={{ zIndex: 1 }}
           />
-          <motion.p className="text-white text-sm sm:text-xl mt-2">
-            ₹ 2,500 + Certificate
+          <motion.p className="text-white sm:text-xl text-sm mt-2">
+            ₹ 2,500 + Certificate + <br />Internship Opportunity <br /> + Goodies
           </motion.p>
         </motion.div>
       </motion.div>
