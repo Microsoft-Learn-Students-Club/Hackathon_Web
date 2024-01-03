@@ -20,6 +20,7 @@ const Schedule = () => {
         <h3 className="text-2xl mb-4 mt-4 text-white font-semibold">
           Day 1 - 17th February 2024
         </h3>
+
         <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50 text-right">
           {/* left */}
           <div className="flex flex-row-reverse md:contents">
