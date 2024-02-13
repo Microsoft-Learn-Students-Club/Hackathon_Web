@@ -15,7 +15,7 @@ const ContactUs = () => {
   };
 
   const fadeInUpTransition = {
-    delay: 9.5, 
+    delay: 9.5,
     duration: 1,
     ease: "easeInOut",
   };
@@ -52,12 +52,12 @@ const ContactUs = () => {
             </h3>
             <div className="mb-2">
               <p className="text-lg md:text-base lg:text-left md:text-center lg:px-20">
-                Rishabh Tripathi: +91 9369744734
+                Aditya Trivedi: +91 97649 35361
               </p>
             </div>
             <div>
               <p className="text-lg md:text-base mb-2 lg:text-left md:text-center lg:px-20">
-                Sanika Patil: +91 7738328956
+                Tej More: +91 91525 66703
               </p>
             </div>
             <div>
