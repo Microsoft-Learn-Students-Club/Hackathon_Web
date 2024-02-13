@@ -12,7 +12,7 @@ import Background from "./Background";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  const targetDate = new Date("February 17, 2024 00:00:00 GMT+0530").getTime();
+  const targetDate = new Date("March 23, 2024 00:00:00 GMT+0530").getTime();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   const [showScrollButton, setShowScrollButton] = useState(false);
 
@@ -182,13 +182,13 @@ const Home = () => {
           />
         </a>
       </motion.div>
-      <motion.div 
-      variants={fadeInVariant}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 1, delay: 1.8 }}
-      className="text-white text-xl md:text-4xl mt-2">
-          Innovate. Transform. Create.
+      <motion.div
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 1, delay: 1.8 }}
+        className="text-white text-xl md:text-4xl mt-2">
+        Innovate. Transform. Create.
       </motion.div>
       <motion.div
         variants={fadeInVariant}
