@@ -211,10 +211,8 @@ const Home = () => {
           enabled
           // className="bg-purple-800 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl mt-6"
           // Disable the button if registration is closed
-          className="bg-purple-900 opacity-50 text-white font-semibold py-2 px-4 rounded-xl mt-6"
-          style={{
-            cursor: "not-allowed",
-          }}
+          className="bg-purple-900  text-white font-semibold py-2 px-4 rounded-xl mt-6"
+
         >
           Register Now
         </button>
