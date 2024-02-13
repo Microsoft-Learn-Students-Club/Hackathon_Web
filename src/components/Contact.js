@@ -57,7 +57,7 @@ const ContactUs = () => {
             </div>
             <div>
               <p className="text-lg md:text-base mb-2 lg:text-left md:text-center lg:px-20">
-                Kshitij Patil: +91 9323544113
+                Sanika Patil: +91 7738328956
               </p>
             </div>
             <div>

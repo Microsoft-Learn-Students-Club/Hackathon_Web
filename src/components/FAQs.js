@@ -11,7 +11,7 @@ const FAQs = () => {
 
   const controls = useAnimation();
 
-  
+
 
   const toggleQuestion = (index) => {
     const newExpandedQuestions = [...expandedQuestions];
@@ -48,7 +48,7 @@ const FAQs = () => {
     },
     {
       question: "What is the registration cost?",
-      answer: "Only ₹400 per team.",
+      answer: "Only ₹250 per team.",
     },
     {
       question: "Are travel expenses included too?",
@@ -86,12 +86,12 @@ const FAQs = () => {
         <span>Frequently Asked Questions</span>
         <hr />
       </h2>
-      
-      <motion.div 
-      initial={{ x: -1500 }} // Initial position off-screen to the left
-      animate={controls}
-      transition={{ delay: 8.5, duration: 1 }} 
-      className="text-white p-4 md:p-8 px-4 md:px-28">
+
+      <motion.div
+        initial={{ x: -1500 }} // Initial position off-screen to the left
+        animate={controls}
+        transition={{ delay: 8.5, duration: 1 }}
+        className="text-white p-4 md:p-8 px-4 md:px-28">
         {faqsData.map((faq, index) => (
           <div
             key={index}
@@ -108,9 +108,8 @@ const FAQs = () => {
               </div>
               <FontAwesomeIcon
                 icon={faChevronDown}
-                className={`ml-2 transition-transform transform ${
-                  expandedQuestions.includes(index) ? "rotate-180" : ""
-                }`}
+                className={`ml-2 transition-transform transform ${expandedQuestions.includes(index) ? "rotate-180" : ""
+                  }`}
                 onClick={() => toggleQuestion(index)}
               />
             </div>
