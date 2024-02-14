@@ -72,7 +72,7 @@ const Schedule = () => {
               animate={controls}
               transition={{ delay: 4.2, duration: 0.5 }} className="col-start-1 text-right col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md bg-purple-700 border border-white">
               <h3 className="font-semibold text-lg mb-1">
-                11:30 PM - Onwards
+                11:30 AM - Onwards
               </h3>
               <p className="leading-tight text-right">Coding Starts</p>
             </motion.div>
