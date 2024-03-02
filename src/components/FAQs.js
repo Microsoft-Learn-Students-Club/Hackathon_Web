@@ -51,6 +51,11 @@ const FAQs = () => {
       answer: "Only ₹250 per team.",
     },
     {
+      question: "When will the problem statements be released?",
+      answer:
+        "All the problem statements will be released a day before the event.",
+    },
+    {
       question: "Are travel expenses included too?",
       answer:
         "No, the participants are responsible for covering their travel expenses.",
@@ -66,7 +71,7 @@ const FAQs = () => {
     {
       question: "Can I participate as an individual or do I need a team?",
       answer:
-        "Both individual and team participation are allowed. You can choose your preferred option during registration.",
+        "Both individual and team participation are allowed. You can participate alone or with a team.",
     },
     {
       question: "Can a member be a part of two teams?",

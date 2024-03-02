@@ -179,7 +179,7 @@ const Home = () => {
         animate="visible"
         transition={{ duration: 1, delay: 1.8 }}
         className="text-white text-xl md:text-4xl mt-2">
-        Innovate. Transform. Create.
+        Innovate. Create. Transform.
       </motion.div>
       <motion.div
         variants={fadeInVariant}
