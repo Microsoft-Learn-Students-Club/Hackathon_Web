@@ -1,5 +1,6 @@
 import React from "react";
-import TitleSponsor from "../assets/scogo.png";
+import Dummy from "../assets/sponsor_logo.png";
+import PSP1 from "../assets/scogo.png";
 import TechPartner1 from "../assets/wolfram.png";
 import TechPartner2 from "../assets/xyz.png";
 import PlatformPartner from "../assets/hacktoskill.png";
@@ -19,6 +20,7 @@ const Sponsors = () => {
         <span>Our Sponsors</span>
         <hr />
       </h2>
+      {/* <p className="text-2xl italic">Big thankyou to our sponsors!</p> */}
 
       <motion.div
         initial="hidden"
@@ -27,17 +29,66 @@ const Sponsors = () => {
         variants={fadeInVariants}
       >
         {/* Title Sponsor */}
-        <div className="mb-4 md:mb-8">
-          <h3 className="text-lg md:text-3xl font-light mb-2">Title Sponsor</h3>
+        {/* <div className="mb-4 md:mb-8">
+          <h3 className="text-lg md:text-3xl font-light mb-2">
+            Title Sponsors
+          </h3>
           <div className="flex flex-col items-center">
             <img
-              src={TitleSponsor}
+              src={Dummy}
               alt="sponsor-1"
               className="max-w-full h-auto mb-2"
               width={175} // Set the desired width in pixels
               height={225} // Set the desired height in pixels
             />
-            <p className="text-md">Scogo Networks</p>
+            <p className="text-md">Name here!</p>
+          </div>
+        </div> */}
+
+        {/* PS Partners */}
+        <div className="mb-4 md:mb-8">
+          <h3 className="text-lg md:text-xl font-semibold mb-2">
+            Problem Statement Partners
+          </h3>
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
+            <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={PSP1}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Scogo Networks</p>
+              </div>
+            </div>
+
+            {/* <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={Dummy}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Name here!</p>
+              </div>
+            </div> */}
+
+            {/* <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={Dummy}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Name here!</p>
+              </div>
+            </div> */}
           </div>
         </div>
 
@@ -73,6 +124,27 @@ const Sponsors = () => {
               </div>
             </div>
 
+            {/* <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={Dummy}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Name here!</p>
+              </div>
+            </div> */}
+          </div>
+        </div>
+
+        {/* Platform Partner */}
+        <div className="mb-4 md:mb-8">
+          <h3 className="text-lg md:text-xl font-semibold mb-2">
+            Platform Partners
+          </h3>
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
             <div className="mb-4 md:mb-8">
               <div className="flex flex-col items-center">
                 <img
