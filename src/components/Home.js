@@ -214,7 +214,7 @@ const Home = () => {
           className="bg-purple-900  text-white font-semibold py-2 px-4 rounded-xl mt-6"
 
         >
-          Register Now
+          Registrations Closed!
         </button>
         {showScrollButton && (
           <button
