@@ -1,5 +1,8 @@
 import React from "react";
-// import TitleSponsor from "../assets/sponsor_logo.png";
+import TitleSponsor from "../assets/scogo.png";
+import TechPartner1 from "../assets/wolfram.png";
+import TechPartner2 from "../assets/xyz.png";
+import PlatformPartner from "../assets/hacktoskill.png";
 import "./style/sectionLine.css";
 import { motion } from "framer-motion";
 
@@ -23,49 +26,70 @@ const Sponsors = () => {
         transition={{ delay: 8.3, duration: 1 }}
         variants={fadeInVariants}
       >
-        <h1 className="text-2xl md:text-3xl font-bold m-8">
-          <i>Revealing Soon!</i>
-        </h1>
-      </motion.div>
-
-      {/* Title Sponsor */}
-      {/* <div className="mb-4 md:mb-8">
-        <h3 className="text-lg md:text-xl font-semibold mb-2">Title Sponsor</h3>
-        <div className="flex flex-col items-center">
-          <img
-            src={TitleSponsor}
-            alt="sponsor-1"
-            className="max-w-full h-auto mb-2"
-            width={100} // Set the desired width in pixels
-            height={150} // Set the desired height in pixels
-          />
-          <p className="text-sm">Title Sponsor Name here</p>
+        {/* Title Sponsor */}
+        <div className="mb-4 md:mb-8">
+          <h3 className="text-lg md:text-3xl font-light mb-2">Title Sponsor</h3>
+          <div className="flex flex-col items-center">
+            <img
+              src={TitleSponsor}
+              alt="sponsor-1"
+              className="max-w-full h-auto mb-2"
+              width={175} // Set the desired width in pixels
+              height={225} // Set the desired height in pixels
+            />
+            <p className="text-md">Scogo Networks</p>
+          </div>
         </div>
-      </div> */}
 
-      {/* Co-Sponsors */}
-      {/* <div className="mb-4 md:mb-8">
-        <h3 className="text-lg md:text-xl font-semibold mb-2">Co-Sponsors</h3>
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
-          <img
-            src={TitleSponsor}
-            alt="sponsor-1"
-            className="max-w-full h-auto mb-2"
-            width={100} // Set the desired width in pixels
-            height={150} // Set the desired height in pixels
-          />
-          <img
-            src={TitleSponsor}
-            alt="sponsor-1"
-            className="max-w-full h-auto mb-2"
-            width={100} // Set the desired width in pixels
-            height={150} // Set the desired height in pixels
-          />
+        {/* Technology Partners */}
+        <div className="mb-4 md:mb-8">
+          <h3 className="text-lg md:text-xl font-semibold mb-2">
+            Technology Partners
+          </h3>
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
+            <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={TechPartner1}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Wolfram</p>
+              </div>
+            </div>
+
+            <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={TechPartner2}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">.xyz Domains</p>
+              </div>
+            </div>
+
+            <div className="mb-4 md:mb-8">
+              <div className="flex flex-col items-center">
+                <img
+                  src={PlatformPartner}
+                  alt="sponsor-1"
+                  className="max-w-full h-auto mb-2"
+                  width={175} // Set the desired width in pixels
+                  height={225} // Set the desired height in pixels
+                />
+                <p className="text-sm">Hack2Skill</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> */}
 
-      {/* Miscellaneous Sponsors */}
-      {/* <div>
+        {/* Miscellaneous Sponsors */}
+        {/* <div>
         <h3 className="text-lg md:text-xl font-semibold mb-2">
           Miscellaneous Sponsors
         </h3>
@@ -110,6 +134,7 @@ const Sponsors = () => {
           </div>
         </div>
       </div> */}
+      </motion.div>
     </div>
   );
 };

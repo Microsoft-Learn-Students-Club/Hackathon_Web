@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
-  faLinkedin,
-  faDiscord,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import Background from "./Background";
 import { motion } from "framer-motion";
@@ -208,11 +207,11 @@ const Home = () => {
         <button
           onClick={handleRegistrationClick}
           // Disable the button if registration is closed
-          enabled
+          disabled
           // className="bg-purple-800 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-xl mt-6"
           // Disable the button if registration is closed
           className="bg-purple-900  text-white font-semibold py-2 px-4 rounded-xl mt-6"
-
+          
         >
           Registrations Closed!
         </button>
